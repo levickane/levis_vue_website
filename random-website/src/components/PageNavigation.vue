@@ -21,13 +21,39 @@
                 @click="drawer = !drawer"
             ></v-app-bar-nav-icon>
             <v-spacer class="hidden-md-and-up"></v-spacer>
-            <v-toolbar-title>{{ websiteTitle }}</v-toolbar-title>
-            <v-btn class="hidden-sm-and-down">About</v-btn>
+            <router-link to="/">
+                <v-toolbar-title>{{ websiteTitle }}</v-toolbar-title>
+            </router-link>
             <v-spacer class="hidden-sm-and-down"></v-spacer>
-            <v-btn class="hidden-sm-and-down">Contact Me</v-btn>
-            <v-btn color="green darken-1" class="hidden-sm-and-down"
+            <v-btn color="black" class="hidden-sm-and-down" to="/about"
+                >About</v-btn
+            >
+            <v-btn color="black" class="hidden-sm-and-down" to="/contact"
+                >Contact Me</v-btn
+            >
+            <v-btn
+                color="green darken-1"
+                class="hidden-sm-and-down"
+                to="/testimonials"
                 >Testimonials</v-btn
             >
+            <v-menu open-on-hover top offset-y>
+                <template v-slot:activator="{ on, attrs }">
+                    <v-btn color="black" dark v-bind="attrs" v-on="on">
+                        Services
+                    </v-btn>
+                </template>
+
+                <v-list>
+                    <v-list-item
+                        v-for="(item, index) in dropdown"
+                        :key="index"
+                        :to="`${item.page}`"
+                    >
+                        <v-list-item-title>{{ item.title }}</v-list-item-title>
+                    </v-list-item>
+                </v-list>
+            </v-menu>
         </v-app-bar>
     </div>
 </template>
@@ -43,6 +69,11 @@ export default {
                 { title: 'About' },
                 { title: 'Testimonials' },
                 { title: 'Contact Me' },
+            ],
+            dropdown: [
+                { title: 'Fitness', page: '/fitness' },
+                { title: 'Real Estate', page: '/realestate' },
+                { title: 'Coding', page: '/coding' },
             ],
         };
     },

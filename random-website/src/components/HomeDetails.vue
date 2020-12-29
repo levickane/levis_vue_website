@@ -4,6 +4,7 @@
             <v-flex class="text-h3 my-5">Big Title Goes Here</v-flex>
             <v-flex>
                 <div class="headline mt-3">Lorem ipsum</div>
+
                 <p class="body-1 mt-3">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Cras pulvinar risus quis mauris interdum, in euismod nibh
@@ -16,8 +17,10 @@
                     gravida eros laoreet condimentum nec vel dui. Nullam quam
                     massa, ultrices eget tincidunt a, pulvinar ac libero.
                 </p>
+                <my-video></my-video>
             </v-flex>
             <v-flex>
+                <hr />
                 <div class="headline mt-3">Lorem ipsum</div>
                 <p class="body-1 mt-3">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -81,12 +84,15 @@
                     id pulvinar massa egestas vitae.
                 </p>
             </v-flex>
+            <hr />
         </v-layout>
     </v-container>
 </template>
 
 <script>
+import MyVideo from './MyVideo.vue';
 export default {
+    components: { MyVideo },
     name: 'HomeDetails',
 };
 </script>

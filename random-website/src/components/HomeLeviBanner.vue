@@ -20,6 +20,14 @@
                 <v-icon large color="black">mdi-arrow-down</v-icon>
             </v-btn>
         </v-layout>
+        <v-btn
+            class="button font-weight-black"
+            justify-left
+            dark
+            to="/testimonials"
+        >
+            <v-icon large color="green">Testimonials</v-icon>
+        </v-btn>
     </v-container>
 </template>
 
@@ -35,5 +43,8 @@ export default {
 }
 .text-shadow {
     text-shadow: 6px, 2px, 2px, black;
+}
+.button:hover {
+    background-color: rgb(138, 187, 136);
 }
 </style>

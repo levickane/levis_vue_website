@@ -1,5 +1,5 @@
 <template>
-    <v-container fluid>
+    <v-container>
         <v-layout>
             <h1>This is a page about Testimonials</h1>
         </v-layout>

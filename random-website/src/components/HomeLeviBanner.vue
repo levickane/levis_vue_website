@@ -1,32 +1,28 @@
 <template>
     <v-container fluid class="home-banner">
-        <v-layout justify-center align-center column pa-5>
+        <v-layout justify-left align-left column pa-5 my-10>
             <div
-                class="text-h1 font-weight-black blue--text text-decoration-underline text-center"
+                class="text-h1 font-weight-black blue--text text-decoration-underline text-left"
             >
                 LEVI'S
             </div>
             <div
-                class="text-h1 font-weight-bold blue--text text-decoration-underline text-center"
+                class="text-h1 font-weight-bold blue--text text-decoration-underline text-left"
             >
                 TEST WEBSITE
             </div>
-            <div
-                class="text-subtitle-1 font-weight-black blue--text text-center"
-            >
+            <div class="text-subtitle-1 font-weight-black blue--text text-left">
                 A website built from scratch using Vue/Vuex/Routers
             </div>
-            <v-btn>
-                <v-icon large color="black">mdi-arrow-down</v-icon>
-            </v-btn>
         </v-layout>
         <v-btn
             class="button font-weight-black"
             justify-left
             dark
             to="/testimonials"
+            color="green"
         >
-            <v-icon large color="green">Testimonials</v-icon>
+            Testimonials
         </v-btn>
     </v-container>
 </template>

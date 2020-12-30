@@ -11,8 +11,9 @@
                     justify-left
                     dark
                     to="/testimonials"
+                    color="green"
                 >
-                    <v-icon large color="green">Testimonials</v-icon>
+                    Testimonials
                 </v-btn>
             </v-col>
         </v-layout>

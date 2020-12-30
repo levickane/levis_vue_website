@@ -62,6 +62,20 @@ const router = new VueRouter({
             component: () =>
                 import('../views/ServicesLanding.vue')
         },
+        {
+            path: '/privacy',
+            name: 'Privacy',
+
+            component: () =>
+                import('../views/Privacy.vue')
+        },
+        {
+            path: '/termsofuse',
+            name: 'TermsOfUse',
+
+            component: () =>
+                import('../views/TermsOfUse.vue')
+        },
     ]
 });
 

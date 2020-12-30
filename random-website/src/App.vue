@@ -4,19 +4,19 @@
         <v-main>
             <router-view></router-view>
         </v-main>
-        <bottom-page></bottom-page>
+        <my-footer></my-footer>
     </v-app>
 </template>
 
 <script>
-import BottomPage from './components/BottomPage.vue';
+import MyFooter from './components/MyFooter.vue';
 import PageNavigation from './components/PageNavigation.vue';
 
 export default {
     name: 'App',
     components: {
         PageNavigation,
-        BottomPage,
+        MyFooter,
     },
     data: () => ({
         //

@@ -21,8 +21,14 @@
                 @click="drawer = !drawer"
             ></v-app-bar-nav-icon>
             <v-spacer class="hidden-md-and-up"></v-spacer>
-            <router-link to="/">
-                <v-toolbar-title>{{ websiteTitle }}</v-toolbar-title>
+            <router-link
+                class="font-weight-black"
+                style="text-decoration: none; color: white"
+                to="/"
+            >
+                <v-toolbar-title class="mx-5">{{
+                    websiteTitle
+                }}</v-toolbar-title>
             </router-link>
             <v-spacer class="hidden-sm-and-down"></v-spacer>
             <v-btn color="black" class="hidden-sm-and-down" to="/about"

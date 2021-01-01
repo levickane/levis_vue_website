@@ -7,14 +7,15 @@
             <v-col
                 cols="12"
                 lg="4"
+                md="4"
                 v-for="(news, index) in NewsLinks"
                 :key="index"
             >
-                <v-card>
+                <v-card v-if="index <= 2">
                     <v-img
                         :src="`${news.picture}`"
                         height="200"
-                        width="250"
+                        contain
                     ></v-img>
                     <v-card-subtitle class="pb-0">News </v-card-subtitle>
                     <v-card-title class="pt-0">{{ news.title }}</v-card-title>
@@ -28,43 +29,13 @@
                     </v-card-actions>
                 </v-card>
             </v-col>
-            <!-- <v-col cols="12" lg="4">
-                <v-card>
-                    <v-img src="https://picsum.photos/id/11/500/300"></v-img>
-                    <v-card-subtitle class="pb-0">News </v-card-subtitle>
-                    <v-card-title class="pt-0">Post #1</v-card-title>
-                    <v-card-actions class="ml-2"
-                        ><a
-                            href="https://www.youtube.com/channel/UCooQlfuioMBcOCeHB5N8q_w"
-                            style="text-decoration: none; color: black"
-                        >
-                            Learn More <v-icon>mdi-arrow-right</v-icon></a
-                        >
-                    </v-card-actions>
-                </v-card>
-            </v-col>
-            <v-col cols="12" lg="4">
-                <v-card>
-                    <v-img src="https://picsum.photos/id/11/500/300"></v-img>
-                    <v-card-subtitle class="pb-0">News </v-card-subtitle>
-                    <v-card-title class="pt-0">Post #1</v-card-title>
-                    <v-card-actions class="ml-2"
-                        ><a
-                            href="https://www.youtube.com/channel/UCooQlfuioMBcOCeHB5N8q_w"
-                            style="text-decoration: none; color: black"
-                        >
-                            Learn More <v-icon>mdi-arrow-right</v-icon></a
-                        >
-                    </v-card-actions>
-                </v-card>
-            </v-col> -->
         </v-layout>
     </v-container>
 </template>
 
 <script>
 export default {
-    name: 'NewsGrid',
+    name: 'NewsCarousel',
     data() {
         return {
             NewsLinks: [
@@ -88,6 +59,13 @@ export default {
                         'https://www.amazon.ca/Poop-that-took-Pee/dp/1466420626',
                     picture:
                         'https://images-na.ssl-images-amazon.com/images/I/41Hzk1vP2SL._SX331_BO1,204,203,200_.jpg',
+                },
+                {
+                    title: 'P is for Pterodactyl',
+                    link:
+                        'amazon.com/Pterodactyl-Worst-Alphabet-Book-Ever/dp/1492674311',
+                    picture:
+                        'https://prodimage.images-bn.com/pimages/9781492674313_p0_v2_s1200x630.jpg',
                 },
             ],
         };

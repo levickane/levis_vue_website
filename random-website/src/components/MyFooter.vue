@@ -95,11 +95,13 @@ export default {
                 { page: 'About', pathway: '/about' },
                 { page: 'Contact Me', pathway: '/contact' },
                 { page: 'Testimonials', pathway: '/testimonials' },
+                { page: 'News', pathway: '/news' },
             ],
             services: [
                 { page: 'Fitness', pathway: '/fitness' },
                 { page: 'Real Estate', pathway: '/realestate' },
                 { page: 'Coding', pathway: '/coding' },
+                { page: 'Support', pathway: '/support' },
             ],
         };
     },

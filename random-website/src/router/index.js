@@ -97,6 +97,20 @@ const router = new VueRouter({
             component: () =>
                 import('../views/ClientHome.vue')
         },
+        {
+            path: '/support',
+            name: 'Support',
+
+            component: () =>
+                import('../views/Support.vue')
+        },
+        {
+            path: '/news',
+            name: 'News',
+
+            component: () =>
+                import('../views/News.vue')
+        },
     ]
 });
 

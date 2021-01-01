@@ -1,6 +1,6 @@
 <template>
     <v-container>
-        <v-layout class="background">
+        <v-layout row wrap class="background">
             <v-col>
                 <div class="text-h3 white--text font-weight-bold">
                     Read the Testimonials!
@@ -18,7 +18,7 @@
                     Testimonials
                 </v-btn>
             </v-col>
-            <v-col cols="5">
+            <v-col cols="12" md="5" lg="5">
                 <v-img
                     src="../assets/AthleteTraining.jpeg"
                     height="300"

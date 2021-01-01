@@ -16,7 +16,7 @@
             <hr />
         </v-container>
         <v-container>
-            <v-layout row wrap>
+            <v-layout row wrap class="my-5">
                 <v-col cols="12" lg="3" xl="3" class="font-weight-black text-h4"
                     >My Mission</v-col
                 >
@@ -25,7 +25,7 @@
                 </v-col>
             </v-layout>
             <hr />
-            <v-layout row wrap>
+            <v-layout row wrap class="my-5">
                 <v-col cols="12" lg="3" xl="3" class="font-weight-black text-h4"
                     >My Clients</v-col
                 >
@@ -34,7 +34,7 @@
                 </v-col>
             </v-layout>
             <hr />
-            <v-layout row wrap>
+            <v-layout row wrap class="my-5">
                 <v-col cols="12" lg="3" xl="3" class="font-weight-black text-h4"
                     >The Influence</v-col
                 >
@@ -85,7 +85,7 @@
                 </v-col>
             </v-layout>
             <hr />
-            <news-grid></news-grid>
+            <news-carousel></news-carousel>
             <careers></careers>
         </v-container>
     </div>
@@ -93,9 +93,9 @@
 
 <script>
 import Careers from '../components/Careers.vue';
-import NewsGrid from '../components/NewsGrid.vue';
+import NewsCarousel from '../components/NewsCarousel.vue';
 export default {
-    components: { NewsGrid, Careers },
+    components: { Careers, NewsCarousel },
     name: 'About',
     data() {
         return {

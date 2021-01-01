@@ -2,10 +2,12 @@
     <v-container>
         <v-layout class="background">
             <v-col>
-                <div class="text-h3 font-weight-bold">
+                <div class="text-h3 white--text font-weight-bold">
                     Read the Testimonials!
                 </div>
-                <div class="text-subtitle-1">Seriously. Read Them</div>
+                <div class="text-subtitle-1 white--text mt-5">
+                    Seriously. Read Them
+                </div>
                 <v-btn
                     class="my-10 button font-weight-black"
                     justify-left
@@ -15,6 +17,13 @@
                 >
                     Testimonials
                 </v-btn>
+            </v-col>
+            <v-col cols="5">
+                <v-img
+                    src="../assets/AthleteTraining.jpeg"
+                    height="300"
+                    contain
+                ></v-img>
             </v-col>
         </v-layout>
     </v-container>
@@ -28,7 +37,7 @@ export default {
 
 <style scoped>
 .background {
-    background-color: coral;
+    background-color: rgb(0, 0, 0);
     border-radius: 10px;
 }
 </style>

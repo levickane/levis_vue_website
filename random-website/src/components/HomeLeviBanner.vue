@@ -11,7 +11,9 @@
             >
                 TEST WEBSITE
             </div>
-            <div class="text-subtitle-1 font-weight-black blue--text text-left">
+            <div
+                class="text-subtitle-1 font-weight-black blue--text text-left mt-10"
+            >
                 A website built from scratch using Vue/Vuex/Routers
             </div>
         </v-layout>

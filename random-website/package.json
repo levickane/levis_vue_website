@@ -10,6 +10,7 @@
   "dependencies": {
     "@mdi/font": "^5.8.55",
     "core-js": "^3.6.5",
+    "firebase": "^8.2.1",
     "v-video-embed": "^1.0.8",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",

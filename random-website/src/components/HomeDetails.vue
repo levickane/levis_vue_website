@@ -1,8 +1,8 @@
 <template>
     <v-container>
         <v-layout column>
-            <v-flex class="text-h3 my-5">Big Title Goes Here</v-flex>
-            <v-flex>
+            <v-col class="text-h3 my-5">Big Title Goes Here</v-col>
+            <v-col>
                 <div class="headline mt-3">Lorem ipsum</div>
 
                 <p class="body-1 mt-3">
@@ -18,8 +18,8 @@
                     massa, ultrices eget tincidunt a, pulvinar ac libero.
                 </p>
                 <my-video></my-video>
-            </v-flex>
-            <v-flex>
+            </v-col>
+            <v-col>
                 <hr />
                 <div class="headline mt-3">Lorem ipsum</div>
                 <p class="body-1 mt-3">
@@ -67,8 +67,8 @@
                     tincidunt ac. Suspendisse ac nibh sit amet lacus ullamcorper
                     maximus.
                 </p>
-            </v-flex>
-            <v-flex>
+            </v-col>
+            <v-col>
                 <div class="headline mt-3">Lorem ipsum</div>
                 <p class="body-1 mt-3">
                     Nullam nec massa eu est fringilla lobortis. Praesent in enim
@@ -83,7 +83,7 @@
                     sapien eu, rhoncus imperdiet dui. Sed viverra iaculis nunc,
                     id pulvinar massa egestas vitae.
                 </p>
-            </v-flex>
+            </v-col>
             <hr />
         </v-layout>
     </v-container>

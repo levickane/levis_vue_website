@@ -41,7 +41,11 @@
                     </router-link>
                 </v-col>
                 <v-col>
-                    <v-btn class="font-weight-black" to="/testimonials">
+                    <v-btn
+                        class="font-weight-black"
+                        outlined="False"
+                        to="/testimonials"
+                    >
                         Testimonials</v-btn
                     >
                 </v-col>

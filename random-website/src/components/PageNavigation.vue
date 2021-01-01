@@ -37,12 +37,19 @@
             <v-btn color="black" class="hidden-sm-and-down" to="/contact"
                 >Contact Me</v-btn
             >
-            <v-btn
-                color="green darken-1"
-                class="hidden-sm-and-down"
-                to="/testimonials"
+            <v-btn color="black" class="hidden-sm-and-down" to="/testimonials"
                 >Testimonials</v-btn
             >
+            <div v-if="!isAuthenticated" class="hidden-sm-and-down">
+                <v-btn color="black" to="/clientlogin">LOGIN</v-btn>
+                <v-btn color="green darken-1" to="/clientjoin">JOIN</v-btn>
+            </div>
+            <div v-else>
+                <v-btn color="black" to="/clienthome">Profile</v-btn>
+                <v-btn outline color="green darken-1" @click="logout"
+                    >Logout</v-btn
+                >
+            </div>
             <v-menu open-on-hover top offset-y>
                 <template v-slot:activator="{ on, attrs }">
                     <v-btn color="black" dark v-bind="attrs" v-on="on">
@@ -82,6 +89,16 @@ export default {
                 { title: 'Coding', page: '/coding' },
             ],
         };
+    },
+    computed: {
+        isAuthenticated() {
+            return this.$store.getters.isAuthenticated;
+        },
+    },
+    methods: {
+        logout() {
+            this.$store.dispatch('userSignOut');
+        },
     },
 };
 </script>

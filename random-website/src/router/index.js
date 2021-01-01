@@ -76,6 +76,27 @@ const router = new VueRouter({
             component: () =>
                 import('../views/TermsOfUse.vue')
         },
+        {
+            path: '/clientjoin',
+            name: 'ClientJoin',
+
+            component: () =>
+                import('../views/ClientJoin.vue')
+        },
+        {
+            path: '/clientlogin',
+            name: 'ClientLogin',
+
+            component: () =>
+                import('../views/ClientLogin.vue')
+        },
+        {
+            path: '/clienthome',
+            name: 'ClientLHome',
+
+            component: () =>
+                import('../views/ClientHome.vue')
+        },
     ]
 });
 

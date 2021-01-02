@@ -7,37 +7,35 @@
             <v-col cols="9">
                 <v-layout>
                     <v-col cols="12" class="shrink">
-                        <transition-group>
-                            <v-col v-for="(item, index) in faqs" :key="index">
-                                <v-layout>
-                                    <v-col
-                                        cols="11"
-                                        class="ma-2;"
-                                        color="primary"
-                                        @click="
-                                            `${(item.expand = !item.expand)}`
-                                        "
-                                    >
-                                        {{ item.title }}
-                                    </v-col>
-                                    <v-col cols="1" @click="expand = !expand"
-                                        ><v-icon medium color="black"
-                                            >mdi-plus</v-icon
-                                        ></v-col
-                                    >
-                                </v-layout>
-                                <v-expand-transition>
-                                    <v-card
-                                        v-show="expand"
-                                        class="mx-auto"
-                                        elevation="0"
-                                        >{{ item.text }}</v-card
-                                    >
-                                </v-expand-transition>
+                        <v-col v-for="(item, index) in faqs" :key="index">
+                            <v-layout>
+                                <v-col
+                                    cols="11"
+                                    class="ma-2;"
+                                    color="primary"
+                                    @click="item.expand = !item.expand"
+                                >
+                                    {{ item.title }}
+                                </v-col>
+                                <v-col
+                                    cols="1"
+                                    @click="item.expand = !item.expand"
+                                    ><v-icon medium color="black"
+                                        >mdi-plus</v-icon
+                                    ></v-col
+                                >
+                            </v-layout>
+                            <v-expand-transition>
+                                <v-card
+                                    v-show="item.expand"
+                                    class="mx-auto"
+                                    elevation="0"
+                                    >{{ item.text }}</v-card
+                                >
+                            </v-expand-transition>
 
-                                <v-divider></v-divider>
-                            </v-col>
-                        </transition-group>
+                            <v-divider></v-divider>
+                        </v-col>
                     </v-col>
                 </v-layout>
             </v-col>
@@ -49,7 +47,6 @@
 export default {
     name: 'ExpandMenu',
     data: () => ({
-        expand: false,
         faqs: [
             {
                 title: 'Title #1',

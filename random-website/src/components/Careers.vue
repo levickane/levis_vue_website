@@ -20,7 +20,7 @@
             </v-col>
             <v-col cols="12" md="5" lg="5">
                 <v-img
-                    src="../assets/LeviKnows.jpg"
+                    src="../assets/LeviKnows.jpeg"
                     height="300"
                     contain
                 ></v-img>

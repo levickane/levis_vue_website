@@ -42,7 +42,7 @@
 <script>
 import MyVideo from '../components/MyVideo.vue';
 import Setup from '../components/Setup.vue';
-import ExpandMenu from './ExpandMenu.vue';
+import ExpandMenu from '../components/ExpandMenu.vue';
 export default {
     components: { MyVideo, Setup, ExpandMenu },
     name: 'Support',

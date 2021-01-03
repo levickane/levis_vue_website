@@ -111,6 +111,13 @@ const router = new VueRouter({
             component: () =>
                 import('../views/News.vue')
         },
+        {
+            path: '/careers',
+            name: 'CareerPage',
+
+            component: () =>
+                import('../views/CareerPage.vue')
+        },
     ]
 });
 

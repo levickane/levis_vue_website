@@ -3,6 +3,7 @@ import Vuex from 'vuex';
 import firebase from 'firebase'
 import router from '@/router'
 import jobs from './jobs.json'
+import news from './news.json'
 
 Vue.use(Vuex);
 
@@ -68,6 +69,9 @@ export default new Vuex.Store({
         getJobs() {
             return jobs
 
+        },
+        getNews() {
+            return news
         }
 
     },

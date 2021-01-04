@@ -1,0 +1,466 @@
+{
+    "news": {
+        "newsLinks": [
+            {
+                "title": "Scrotie McBoogeryballs",
+                "link": "https://www.goodreads.com/en/book/show/7915570-the-tale-of-scrotie-mcboogerballs",
+                "picture": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1269573360i/7915570._UX160_.jpg"
+            },
+            {
+                "title": "P is for Pterodactyl",
+                "link": "https://www.barnesandnoble.com/w/p-is-for-pterodactyl-raj-haldar/1127257531",
+                "picture": "https://prodimage.images-bn.com/pimages/9781492674313_p0_v2_s1200x630.jpg"
+            },
+            {
+                "title": "The Poop That Took A Pee",
+                "link": "https://www.amazon.ca/Poop-that-took-Pee/dp/1466420626",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/41Hzk1vP2SL._SX331_BO1,204,203,200_.jpg"
+            },
+            {
+                "title": "Strange Planet",
+                "link": "https://www.nathanwpyle.art/books",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/61zb65rJ5OL.jpg"
+            },
+            {
+                "title": "Scrotie McBoogeryballs",
+                "link": "https://www.goodreads.com/en/book/show/7915570-the-tale-of-scrotie-mcboogerballs",
+                "picture": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1269573360i/7915570._UX160_.jpg"
+            },
+            {
+                "title": "P is for Pterodactyl",
+                "link": "https://www.barnesandnoble.com/w/p-is-for-pterodactyl-raj-haldar/1127257531",
+                "picture": "https://prodimage.images-bn.com/pimages/9781492674313_p0_v2_s1200x630.jpg"
+            },
+            {
+                "title": "The Poop That Took A Pee",
+                "link": "https://www.amazon.ca/Poop-that-took-Pee/dp/1466420626",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/41Hzk1vP2SL._SX331_BO1,204,203,200_.jpg"
+            },
+            {
+                "title": "Strange Planet",
+                "link": "https://www.nathanwpyle.art/books",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/61zb65rJ5OL.jpg"
+            },
+            {
+                "title": "Scrotie McBoogeryballs",
+                "link": "https://www.goodreads.com/en/book/show/7915570-the-tale-of-scrotie-mcboogerballs",
+                "picture": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1269573360i/7915570._UX160_.jpg"
+            },
+            {
+                "title": "P is for Pterodactyl",
+                "link": "https://www.barnesandnoble.com/w/p-is-for-pterodactyl-raj-haldar/1127257531",
+                "picture": "https://prodimage.images-bn.com/pimages/9781492674313_p0_v2_s1200x630.jpg"
+            },
+            {
+                "title": "The Poop That Took A Pee",
+                "link": "https://www.amazon.ca/Poop-that-took-Pee/dp/1466420626",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/41Hzk1vP2SL._SX331_BO1,204,203,200_.jpg"
+            },
+            {
+                "title": "Strange Planet",
+                "link": "https://www.nathanwpyle.art/books",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/61zb65rJ5OL.jpg"
+            },
+            {
+                "title": "Scrotie McBoogeryballs",
+                "link": "https://www.goodreads.com/en/book/show/7915570-the-tale-of-scrotie-mcboogerballs",
+                "picture": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1269573360i/7915570._UX160_.jpg"
+            },
+            {
+                "title": "P is for Pterodactyl",
+                "link": "https://www.barnesandnoble.com/w/p-is-for-pterodactyl-raj-haldar/1127257531",
+                "picture": "https://prodimage.images-bn.com/pimages/9781492674313_p0_v2_s1200x630.jpg"
+            },
+            {
+                "title": "The Poop That Took A Pee",
+                "link": "https://www.amazon.ca/Poop-that-took-Pee/dp/1466420626",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/41Hzk1vP2SL._SX331_BO1,204,203,200_.jpg"
+            },
+            {
+                "title": "Strange Planet",
+                "link": "https://www.nathanwpyle.art/books",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/61zb65rJ5OL.jpg"
+            },
+            {
+                "title": "Scrotie McBoogeryballs",
+                "link": "https://www.goodreads.com/en/book/show/7915570-the-tale-of-scrotie-mcboogerballs",
+                "picture": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1269573360i/7915570._UX160_.jpg"
+            },
+            {
+                "title": "P is for Pterodactyl",
+                "link": "https://www.barnesandnoble.com/w/p-is-for-pterodactyl-raj-haldar/1127257531",
+                "picture": "https://prodimage.images-bn.com/pimages/9781492674313_p0_v2_s1200x630.jpg"
+            },
+            {
+                "title": "The Poop That Took A Pee",
+                "link": "https://www.amazon.ca/Poop-that-took-Pee/dp/1466420626",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/41Hzk1vP2SL._SX331_BO1,204,203,200_.jpg"
+            },
+            {
+                "title": "Strange Planet",
+                "link": "https://www.nathanwpyle.art/books",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/61zb65rJ5OL.jpg"
+            },
+            {
+                "title": "Scrotie McBoogeryballs",
+                "link": "https://www.goodreads.com/en/book/show/7915570-the-tale-of-scrotie-mcboogerballs",
+                "picture": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1269573360i/7915570._UX160_.jpg"
+            },
+            {
+                "title": "P is for Pterodactyl",
+                "link": "https://www.barnesandnoble.com/w/p-is-for-pterodactyl-raj-haldar/1127257531",
+                "picture": "https://prodimage.images-bn.com/pimages/9781492674313_p0_v2_s1200x630.jpg"
+            },
+            {
+                "title": "The Poop That Took A Pee",
+                "link": "https://www.amazon.ca/Poop-that-took-Pee/dp/1466420626",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/41Hzk1vP2SL._SX331_BO1,204,203,200_.jpg"
+            },
+            {
+                "title": "Strange Planet",
+                "link": "https://www.nathanwpyle.art/books",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/61zb65rJ5OL.jpg"
+            },
+            {
+                "title": "Scrotie McBoogeryballs",
+                "link": "https://www.goodreads.com/en/book/show/7915570-the-tale-of-scrotie-mcboogerballs",
+                "picture": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1269573360i/7915570._UX160_.jpg"
+            },
+            {
+                "title": "P is for Pterodactyl",
+                "link": "https://www.barnesandnoble.com/w/p-is-for-pterodactyl-raj-haldar/1127257531",
+                "picture": "https://prodimage.images-bn.com/pimages/9781492674313_p0_v2_s1200x630.jpg"
+            },
+            {
+                "title": "The Poop That Took A Pee",
+                "link": "https://www.amazon.ca/Poop-that-took-Pee/dp/1466420626",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/41Hzk1vP2SL._SX331_BO1,204,203,200_.jpg"
+            },
+            {
+                "title": "Strange Planet",
+                "link": "https://www.nathanwpyle.art/books",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/61zb65rJ5OL.jpg"
+            },
+            {
+                "title": "Scrotie McBoogeryballs",
+                "link": "https://www.goodreads.com/en/book/show/7915570-the-tale-of-scrotie-mcboogerballs",
+                "picture": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1269573360i/7915570._UX160_.jpg"
+            },
+            {
+                "title": "P is for Pterodactyl",
+                "link": "https://www.barnesandnoble.com/w/p-is-for-pterodactyl-raj-haldar/1127257531",
+                "picture": "https://prodimage.images-bn.com/pimages/9781492674313_p0_v2_s1200x630.jpg"
+            },
+            {
+                "title": "The Poop That Took A Pee",
+                "link": "https://www.amazon.ca/Poop-that-took-Pee/dp/1466420626",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/41Hzk1vP2SL._SX331_BO1,204,203,200_.jpg"
+            },
+            {
+                "title": "Strange Planet",
+                "link": "https://www.nathanwpyle.art/books",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/61zb65rJ5OL.jpg"
+            },
+            {
+                "title": "Scrotie McBoogeryballs",
+                "link": "https://www.goodreads.com/en/book/show/7915570-the-tale-of-scrotie-mcboogerballs",
+                "picture": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1269573360i/7915570._UX160_.jpg"
+            },
+            {
+                "title": "P is for Pterodactyl",
+                "link": "https://www.barnesandnoble.com/w/p-is-for-pterodactyl-raj-haldar/1127257531",
+                "picture": "https://prodimage.images-bn.com/pimages/9781492674313_p0_v2_s1200x630.jpg"
+            },
+            {
+                "title": "The Poop That Took A Pee",
+                "link": "https://www.amazon.ca/Poop-that-took-Pee/dp/1466420626",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/41Hzk1vP2SL._SX331_BO1,204,203,200_.jpg"
+            },
+            {
+                "title": "Strange Planet",
+                "link": "https://www.nathanwpyle.art/books",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/61zb65rJ5OL.jpg"
+            },
+            {
+                "title": "Scrotie McBoogeryballs",
+                "link": "https://www.goodreads.com/en/book/show/7915570-the-tale-of-scrotie-mcboogerballs",
+                "picture": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1269573360i/7915570._UX160_.jpg"
+            },
+            {
+                "title": "P is for Pterodactyl",
+                "link": "https://www.barnesandnoble.com/w/p-is-for-pterodactyl-raj-haldar/1127257531",
+                "picture": "https://prodimage.images-bn.com/pimages/9781492674313_p0_v2_s1200x630.jpg"
+            },
+            {
+                "title": "The Poop That Took A Pee",
+                "link": "https://www.amazon.ca/Poop-that-took-Pee/dp/1466420626",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/41Hzk1vP2SL._SX331_BO1,204,203,200_.jpg"
+            },
+            {
+                "title": "Strange Planet",
+                "link": "https://www.nathanwpyle.art/books",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/61zb65rJ5OL.jpg"
+            },
+            {
+                "title": "Scrotie McBoogeryballs",
+                "link": "https://www.goodreads.com/en/book/show/7915570-the-tale-of-scrotie-mcboogerballs",
+                "picture": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1269573360i/7915570._UX160_.jpg"
+            },
+            {
+                "title": "P is for Pterodactyl",
+                "link": "https://www.barnesandnoble.com/w/p-is-for-pterodactyl-raj-haldar/1127257531",
+                "picture": "https://prodimage.images-bn.com/pimages/9781492674313_p0_v2_s1200x630.jpg"
+            },
+            {
+                "title": "The Poop That Took A Pee",
+                "link": "https://www.amazon.ca/Poop-that-took-Pee/dp/1466420626",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/41Hzk1vP2SL._SX331_BO1,204,203,200_.jpg"
+            },
+            {
+                "title": "Strange Planet",
+                "link": "https://www.nathanwpyle.art/books",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/61zb65rJ5OL.jpg"
+            },
+            {
+                "title": "Scrotie McBoogeryballs",
+                "link": "https://www.goodreads.com/en/book/show/7915570-the-tale-of-scrotie-mcboogerballs",
+                "picture": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1269573360i/7915570._UX160_.jpg"
+            },
+            {
+                "title": "P is for Pterodactyl",
+                "link": "https://www.barnesandnoble.com/w/p-is-for-pterodactyl-raj-haldar/1127257531",
+                "picture": "https://prodimage.images-bn.com/pimages/9781492674313_p0_v2_s1200x630.jpg"
+            },
+            {
+                "title": "The Poop That Took A Pee",
+                "link": "https://www.amazon.ca/Poop-that-took-Pee/dp/1466420626",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/41Hzk1vP2SL._SX331_BO1,204,203,200_.jpg"
+            },
+            {
+                "title": "Strange Planet",
+                "link": "https://www.nathanwpyle.art/books",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/61zb65rJ5OL.jpg"
+            },
+            {
+                "title": "Scrotie McBoogeryballs",
+                "link": "https://www.goodreads.com/en/book/show/7915570-the-tale-of-scrotie-mcboogerballs",
+                "picture": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1269573360i/7915570._UX160_.jpg"
+            },
+            {
+                "title": "P is for Pterodactyl",
+                "link": "https://www.barnesandnoble.com/w/p-is-for-pterodactyl-raj-haldar/1127257531",
+                "picture": "https://prodimage.images-bn.com/pimages/9781492674313_p0_v2_s1200x630.jpg"
+            },
+            {
+                "title": "The Poop That Took A Pee",
+                "link": "https://www.amazon.ca/Poop-that-took-Pee/dp/1466420626",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/41Hzk1vP2SL._SX331_BO1,204,203,200_.jpg"
+            },
+            {
+                "title": "Strange Planet",
+                "link": "https://www.nathanwpyle.art/books",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/61zb65rJ5OL.jpg"
+            },
+            {
+                "title": "Scrotie McBoogeryballs",
+                "link": "https://www.goodreads.com/en/book/show/7915570-the-tale-of-scrotie-mcboogerballs",
+                "picture": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1269573360i/7915570._UX160_.jpg"
+            },
+            {
+                "title": "P is for Pterodactyl",
+                "link": "https://www.barnesandnoble.com/w/p-is-for-pterodactyl-raj-haldar/1127257531",
+                "picture": "https://prodimage.images-bn.com/pimages/9781492674313_p0_v2_s1200x630.jpg"
+            },
+            {
+                "title": "The Poop That Took A Pee",
+                "link": "https://www.amazon.ca/Poop-that-took-Pee/dp/1466420626",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/41Hzk1vP2SL._SX331_BO1,204,203,200_.jpg"
+            },
+            {
+                "title": "Strange Planet",
+                "link": "https://www.nathanwpyle.art/books",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/61zb65rJ5OL.jpg"
+            },
+            {
+                "title": "Scrotie McBoogeryballs",
+                "link": "https://www.goodreads.com/en/book/show/7915570-the-tale-of-scrotie-mcboogerballs",
+                "picture": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1269573360i/7915570._UX160_.jpg"
+            },
+            {
+                "title": "P is for Pterodactyl",
+                "link": "https://www.barnesandnoble.com/w/p-is-for-pterodactyl-raj-haldar/1127257531",
+                "picture": "https://prodimage.images-bn.com/pimages/9781492674313_p0_v2_s1200x630.jpg"
+            },
+            {
+                "title": "The Poop That Took A Pee",
+                "link": "https://www.amazon.ca/Poop-that-took-Pee/dp/1466420626",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/41Hzk1vP2SL._SX331_BO1,204,203,200_.jpg"
+            },
+            {
+                "title": "Strange Planet",
+                "link": "https://www.nathanwpyle.art/books",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/61zb65rJ5OL.jpg"
+            },
+            {
+                "title": "Scrotie McBoogeryballs",
+                "link": "https://www.goodreads.com/en/book/show/7915570-the-tale-of-scrotie-mcboogerballs",
+                "picture": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1269573360i/7915570._UX160_.jpg"
+            },
+            {
+                "title": "P is for Pterodactyl",
+                "link": "https://www.barnesandnoble.com/w/p-is-for-pterodactyl-raj-haldar/1127257531",
+                "picture": "https://prodimage.images-bn.com/pimages/9781492674313_p0_v2_s1200x630.jpg"
+            },
+            {
+                "title": "The Poop That Took A Pee",
+                "link": "https://www.amazon.ca/Poop-that-took-Pee/dp/1466420626",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/41Hzk1vP2SL._SX331_BO1,204,203,200_.jpg"
+            },
+            {
+                "title": "Strange Planet",
+                "link": "https://www.nathanwpyle.art/books",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/61zb65rJ5OL.jpg"
+            },
+            {
+                "title": "Scrotie McBoogeryballs",
+                "link": "https://www.goodreads.com/en/book/show/7915570-the-tale-of-scrotie-mcboogerballs",
+                "picture": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1269573360i/7915570._UX160_.jpg"
+            },
+            {
+                "title": "P is for Pterodactyl",
+                "link": "https://www.barnesandnoble.com/w/p-is-for-pterodactyl-raj-haldar/1127257531",
+                "picture": "https://prodimage.images-bn.com/pimages/9781492674313_p0_v2_s1200x630.jpg"
+            },
+            {
+                "title": "The Poop That Took A Pee",
+                "link": "https://www.amazon.ca/Poop-that-took-Pee/dp/1466420626",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/41Hzk1vP2SL._SX331_BO1,204,203,200_.jpg"
+            },
+            {
+                "title": "Strange Planet",
+                "link": "https://www.nathanwpyle.art/books",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/61zb65rJ5OL.jpg"
+            },
+            {
+                "title": "Scrotie McBoogeryballs",
+                "link": "https://www.goodreads.com/en/book/show/7915570-the-tale-of-scrotie-mcboogerballs",
+                "picture": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1269573360i/7915570._UX160_.jpg"
+            },
+            {
+                "title": "P is for Pterodactyl",
+                "link": "https://www.barnesandnoble.com/w/p-is-for-pterodactyl-raj-haldar/1127257531",
+                "picture": "https://prodimage.images-bn.com/pimages/9781492674313_p0_v2_s1200x630.jpg"
+            },
+            {
+                "title": "The Poop That Took A Pee",
+                "link": "https://www.amazon.ca/Poop-that-took-Pee/dp/1466420626",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/41Hzk1vP2SL._SX331_BO1,204,203,200_.jpg"
+            },
+            {
+                "title": "Strange Planet",
+                "link": "https://www.nathanwpyle.art/books",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/61zb65rJ5OL.jpg"
+            },
+            {
+                "title": "Scrotie McBoogeryballs",
+                "link": "https://www.goodreads.com/en/book/show/7915570-the-tale-of-scrotie-mcboogerballs",
+                "picture": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1269573360i/7915570._UX160_.jpg"
+            },
+            {
+                "title": "P is for Pterodactyl",
+                "link": "https://www.barnesandnoble.com/w/p-is-for-pterodactyl-raj-haldar/1127257531",
+                "picture": "https://prodimage.images-bn.com/pimages/9781492674313_p0_v2_s1200x630.jpg"
+            },
+            {
+                "title": "The Poop That Took A Pee",
+                "link": "https://www.amazon.ca/Poop-that-took-Pee/dp/1466420626",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/41Hzk1vP2SL._SX331_BO1,204,203,200_.jpg"
+            },
+            {
+                "title": "Strange Planet",
+                "link": "https://www.nathanwpyle.art/books",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/61zb65rJ5OL.jpg"
+            },
+            {
+                "title": "Scrotie McBoogeryballs",
+                "link": "https://www.goodreads.com/en/book/show/7915570-the-tale-of-scrotie-mcboogerballs",
+                "picture": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1269573360i/7915570._UX160_.jpg"
+            },
+            {
+                "title": "P is for Pterodactyl",
+                "link": "https://www.barnesandnoble.com/w/p-is-for-pterodactyl-raj-haldar/1127257531",
+                "picture": "https://prodimage.images-bn.com/pimages/9781492674313_p0_v2_s1200x630.jpg"
+            },
+            {
+                "title": "The Poop That Took A Pee",
+                "link": "https://www.amazon.ca/Poop-that-took-Pee/dp/1466420626",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/41Hzk1vP2SL._SX331_BO1,204,203,200_.jpg"
+            },
+            {
+                "title": "Strange Planet",
+                "link": "https://www.nathanwpyle.art/books",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/61zb65rJ5OL.jpg"
+            },
+            {
+                "title": "Scrotie McBoogeryballs",
+                "link": "https://www.goodreads.com/en/book/show/7915570-the-tale-of-scrotie-mcboogerballs",
+                "picture": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1269573360i/7915570._UX160_.jpg"
+            },
+            {
+                "title": "P is for Pterodactyl",
+                "link": "https://www.barnesandnoble.com/w/p-is-for-pterodactyl-raj-haldar/1127257531",
+                "picture": "https://prodimage.images-bn.com/pimages/9781492674313_p0_v2_s1200x630.jpg"
+            },
+            {
+                "title": "The Poop That Took A Pee",
+                "link": "https://www.amazon.ca/Poop-that-took-Pee/dp/1466420626",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/41Hzk1vP2SL._SX331_BO1,204,203,200_.jpg"
+            },
+            {
+                "title": "Strange Planet",
+                "link": "https://www.nathanwpyle.art/books",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/61zb65rJ5OL.jpg"
+            },
+            {
+                "title": "Scrotie McBoogeryballs",
+                "link": "https://www.goodreads.com/en/book/show/7915570-the-tale-of-scrotie-mcboogerballs",
+                "picture": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1269573360i/7915570._UX160_.jpg"
+            },
+            {
+                "title": "P is for Pterodactyl",
+                "link": "https://www.barnesandnoble.com/w/p-is-for-pterodactyl-raj-haldar/1127257531",
+                "picture": "https://prodimage.images-bn.com/pimages/9781492674313_p0_v2_s1200x630.jpg"
+            },
+            {
+                "title": "The Poop That Took A Pee",
+                "link": "https://www.amazon.ca/Poop-that-took-Pee/dp/1466420626",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/41Hzk1vP2SL._SX331_BO1,204,203,200_.jpg"
+            },
+            {
+                "title": "Strange Planet",
+                "link": "https://www.nathanwpyle.art/books",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/61zb65rJ5OL.jpg"
+            },
+            {
+                "title": "Scrotie McBoogeryballs",
+                "link": "https://www.goodreads.com/en/book/show/7915570-the-tale-of-scrotie-mcboogerballs",
+                "picture": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1269573360i/7915570._UX160_.jpg"
+            },
+            {
+                "title": "P is for Pterodactyl",
+                "link": "https://www.barnesandnoble.com/w/p-is-for-pterodactyl-raj-haldar/1127257531",
+                "picture": "https://prodimage.images-bn.com/pimages/9781492674313_p0_v2_s1200x630.jpg"
+            },
+            {
+                "title": "The Poop That Took A Pee",
+                "link": "https://www.amazon.ca/Poop-that-took-Pee/dp/1466420626",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/41Hzk1vP2SL._SX331_BO1,204,203,200_.jpg"
+            },
+            {
+                "title": "Strange Planet",
+                "link": "https://www.nathanwpyle.art/books",
+                "picture": "https://images-na.ssl-images-amazon.com/images/I/61zb65rJ5OL.jpg"
+            }
+        ]
+    }
+}

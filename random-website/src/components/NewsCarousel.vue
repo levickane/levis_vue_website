@@ -8,10 +8,10 @@
                 cols="12"
                 lg="4"
                 md="4"
-                v-for="(news, index) in NewsLinks"
+                v-for="(news, index) in newsLinks.slice(0, 3)"
                 :key="index"
             >
-                <v-card v-if="index <= 2">
+                <v-card>
                     <v-img
                         :src="`${news.picture}`"
                         height="200"
@@ -22,6 +22,7 @@
                     <v-card-actions class="ml-2"
                         ><a
                             :href="`${news.link}`"
+                            target="_blank"
                             style="text-decoration: none; color: black"
                         >
                             Learn More <v-icon>mdi-arrow-right</v-icon></a
@@ -38,37 +39,13 @@ export default {
     name: 'NewsCarousel',
     data() {
         return {
-            NewsLinks: [
-                {
-                    title: 'Scrotie McBoogeryballs',
-                    link:
-                        'https://www.goodreads.com/en/book/show/7915570-the-tale-of-scrotie-mcboogerballs',
-                    picture:
-                        'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1269573360i/7915570._UX160_.jpg',
-                },
-                {
-                    title: 'P is for Pterodactyl',
-                    link:
-                        'amazon.com/Pterodactyl-Worst-Alphabet-Book-Ever/dp/1492674311',
-                    picture:
-                        'https://prodimage.images-bn.com/pimages/9781492674313_p0_v2_s1200x630.jpg',
-                },
-                {
-                    title: 'The Poop That Took A Pee',
-                    link:
-                        'https://www.amazon.ca/Poop-that-took-Pee/dp/1466420626',
-                    picture:
-                        'https://images-na.ssl-images-amazon.com/images/I/41Hzk1vP2SL._SX331_BO1,204,203,200_.jpg',
-                },
-                {
-                    title: 'P is for Pterodactyl',
-                    link:
-                        'amazon.com/Pterodactyl-Worst-Alphabet-Book-Ever/dp/1492674311',
-                    picture:
-                        'https://prodimage.images-bn.com/pimages/9781492674313_p0_v2_s1200x630.jpg',
-                },
-            ],
+            newsLinks: {},
         };
+    },
+
+    async created() {
+        const newsData = await this.$store.dispatch('getNews');
+        this.newsLinks = newsData.news.newsLinks;
     },
 };
 </script>

@@ -7,7 +7,7 @@
                 LEVI'S
             </div>
             <div
-                class="text-h1 font-weight-bold blue--text text-decoration-underline text-left; ('text-h2'=$vuetify.breakpoint.mdAndDown)"
+                class="text-h2 text-lg-h1 text-xl-h1 font-weight-bold blue--text text-decoration-underline text-left"
             >
                 TEST WEBSITE
             </div>

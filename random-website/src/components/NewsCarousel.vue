@@ -40,7 +40,7 @@ export default {
         return {
             NewsLinks: [
                 {
-                    title: 'Scrodey McBoogeryballs',
+                    title: 'Scrotie McBoogeryballs',
                     link:
                         'https://www.goodreads.com/en/book/show/7915570-the-tale-of-scrotie-mcboogerballs',
                     picture:

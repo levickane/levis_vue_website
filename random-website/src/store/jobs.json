@@ -1,0 +1,34 @@
+{
+    "jobs": {
+        "Engineering": [
+            {
+                "title": "Job title #1",
+                "location": "USA"
+            },
+            {
+                "title": "Job title #4",
+                "location": "Hungary"
+            },
+            {
+                "title": "Job title #6",
+                "location": "Nepal"
+            }
+        ],
+        "Design": [
+            {
+                "title": "Job title #2",
+                "location": "Mexico"
+            },
+            {
+                "title": "Job title #3",
+                "location": "Italy"
+            }
+        ],
+        "Finance": [
+            {
+                "title": "Job title #5",
+                "location": "Kroatia"
+            }
+        ]
+    }
+}

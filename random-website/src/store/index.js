@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 import firebase from 'firebase'
 import router from '@/router'
+import jobs from './jobs.json'
 
 Vue.use(Vuex);
 
@@ -63,7 +64,12 @@ export default new Vuex.Store({
                     commit('setIsAuthenticated', false)
                     router.push('/')
                 })
+        },
+        getJobs() {
+            return jobs
+
         }
+
     },
     getters: {
         isAuthenticated(state) {

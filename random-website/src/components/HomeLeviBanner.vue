@@ -1,13 +1,13 @@
 <template>
-    <v-container fluid class="home-banner">
-        <v-layout justify-left align-left column pa-5 my-10>
+    <v-container fluid style="background-color: black">
+        <v-layout justify-left align-left column pa-5 my-10 row wrap>
             <div
                 class="text-h1 font-weight-black blue--text text-decoration-underline text-left"
             >
                 LEVI'S
             </div>
             <div
-                class="text-h1 font-weight-bold blue--text text-decoration-underline text-left"
+                class="text-h1 font-weight-bold blue--text text-decoration-underline text-left; ('text-h2'=$vuetify.breakpoint.mdAndDown)"
             >
                 TEST WEBSITE
             </div>
@@ -18,7 +18,7 @@
             </div>
         </v-layout>
         <v-btn
-            class="button font-weight-black"
+            class="font-weight-black"
             justify-left
             dark
             to="/testimonials"
@@ -36,13 +36,4 @@ export default {
 </script>
 
 <style scoped>
-.home-banner {
-    background: black;
-}
-.text-shadow {
-    text-shadow: 6px, 2px, 2px, black;
-}
-.button:hover {
-    background-color: rgb(138, 187, 136);
-}
 </style>

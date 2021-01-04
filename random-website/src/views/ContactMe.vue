@@ -93,12 +93,15 @@
                 </v-form>
             </v-col>
         </v-layout>
+        <read-testimonials></read-testimonials>
     </v-container>
 </template>
 
 <script>
 import router from '@/router';
+import ReadTestimonials from '../components/ReadTestimonials.vue';
 export default {
+    components: { ReadTestimonials },
     name: 'ContactMe',
     data: () => ({
         valid: true,

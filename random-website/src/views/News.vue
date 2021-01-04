@@ -39,7 +39,15 @@
                 </v-card>
             </v-col>
         </v-layout>
-        <v-pagination v-model="page" :length="5"></v-pagination>
+        <v-pagination
+            v-model="page"
+            :length="totalPages.length"
+            circle
+            color="black"
+            :total-visible="7"
+            prev-icon="mdi-arrow-left"
+            next-icon="mdi-arrow-right"
+        ></v-pagination>
     </v-container>
 </template>
 
@@ -50,17 +58,11 @@ export default {
         return {
             posts: [],
             page: 1,
-            perPage: 4,
+            perPage: 9,
             totalPages: [],
         };
     },
     methods: {
-        setPages() {
-            let numberOfPages = Math.ceil(this.posts.length / this.perPage);
-            for (let i = 1; i <= numberOfPages; i++) {
-                this.totalPages.push(i);
-            }
-        },
         paginate(posts) {
             let page = this.page;
             let perPage = this.perPage;
@@ -74,14 +76,14 @@ export default {
             return this.paginate(this.posts);
         },
     },
-    watch: {
-        posts() {
-            this.setPages;
-        },
-    },
     async created() {
         const newsData = await this.$store.dispatch('getNews');
         this.posts = newsData.news.newsLinks;
+        let numberOfPages = Math.ceil(this.posts.length / this.perPage);
+        for (let i = 1; i <= numberOfPages; i++) {
+            this.totalPages.push(i);
+            console.log(this.posts);
+        }
     },
 };
 </script>

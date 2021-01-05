@@ -56,13 +56,6 @@ const router = new VueRouter({
                 import('../views/Testimonials.vue')
         },
         {
-            path: '/services',
-            name: 'Services',
-
-            component: () =>
-                import('../views/ServicesLanding.vue')
-        },
-        {
             path: '/privacy',
             name: 'Privacy',
 

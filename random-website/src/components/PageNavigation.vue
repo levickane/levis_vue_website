@@ -65,9 +65,27 @@
                                 :key="index"
                                 :to="`${item.page}`"
                             >
-                                <v-list-item-title>{{
-                                    item.title
-                                }}</v-list-item-title>
+                                <span
+                                    ><v-img
+                                        height="50"
+                                        width="50"
+                                        :src="`${item.picture}`"
+                                    ></v-img
+                                ></span>
+                                <v-col>
+                                    <v-list-item-title
+                                        style="font-size: 0.95em"
+                                        class="font-weight-bold"
+                                        >{{ item.title }}</v-list-item-title
+                                    >
+                                    <v-list-item-title
+                                        style="font-size: 0.75em"
+                                        class="text-secondary"
+                                        >{{
+                                            item.description
+                                        }}</v-list-item-title
+                                    >
+                                </v-col>
                             </v-list-item>
                         </v-list>
                     </v-menu>
@@ -109,7 +127,7 @@
                     >Logout</v-btn
                 >
             </div>
-            <v-menu open-on-hover top offset-y>
+            <v-menu open-on-hover bottom offset-y>
                 <template v-slot:activator="{ on, attrs }">
                     <v-btn
                         class="hidden-sm-and-down"
@@ -124,11 +142,31 @@
 
                 <v-list>
                     <v-list-item
+                        width="300"
+                        class="mx-auto"
                         v-for="(item, index) in dropdown"
                         :key="index"
                         :to="`${item.page}`"
                     >
-                        <v-list-item-title>{{ item.title }}</v-list-item-title>
+                        <span
+                            ><v-img
+                                height="50"
+                                width="50"
+                                :src="`${item.picture}`"
+                            ></v-img
+                        ></span>
+                        <v-col>
+                            <v-list-item-title
+                                style="font-size: 0.95em"
+                                class="font-weight-bold"
+                                >{{ item.title }}</v-list-item-title
+                            >
+                            <v-list-item-title
+                                style="font-size: 0.75em"
+                                class="text-secondary"
+                                >{{ item.description }}</v-list-item-title
+                            >
+                        </v-col>
                     </v-list-item>
                 </v-list>
             </v-menu>
@@ -149,9 +187,27 @@ export default {
                 { title: 'Contact Me', page: '/contact' },
             ],
             dropdown: [
-                { title: 'Fitness', page: '/fitness' },
-                { title: 'Real Estate', page: '/realestate' },
-                { title: 'Coding', page: '/coding' },
+                {
+                    title: 'Fitness',
+                    picture:
+                        'https://purepng.com/public/uploads/large/purepng.com-musclemusclemuscle-manbody-builderssix-packmuscle-boys-1421526926221lvohc.png',
+                    description: 'Learn how to not be fat',
+                    page: '/fitness',
+                },
+                {
+                    title: 'Real Estate',
+                    picture:
+                        'https://toppng.com/uploads/preview/rolls-and-stacks-of-money-stacks-of-money-11562998046h21kuiihqr.png',
+                    description: 'Earn Passive Income',
+                    page: '/realestate',
+                },
+                {
+                    title: 'Coding',
+                    picture:
+                        'https://toppng.com/uploads/preview/computer-icon-vector-png-desktop-computer-11563207085f1wwos2r52.png',
+                    description: 'Sit down all day long',
+                    page: '/coding',
+                },
             ],
         };
     },

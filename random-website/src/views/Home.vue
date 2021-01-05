@@ -2,8 +2,11 @@
     <div>
         <home-levi-banner></home-levi-banner>
         <home-details></home-details>
+        <hr />
         <service-previews></service-previews>
+        <hr />
         <who-am-i></who-am-i>
+        <hr />
         <latest-and-greatest></latest-and-greatest>
         <read-testimonials></read-testimonials>
     </div>

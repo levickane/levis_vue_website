@@ -19,7 +19,6 @@
                 ></v-col
             >
         </v-layout>
-        <hr />
     </v-container>
 </template>
 

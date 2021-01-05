@@ -58,21 +58,8 @@
             >
         </v-layout>
         <v-layout row wrap class="mb-10">
-            <v-col cols="3"></v-col>
-            <v-col
-                ><span class="black--text"
-                    ><router-link
-                        style="text-decoration: none; color: black"
-                        to="/services"
-                        >Learn More
-                        <v-icon large color="black"
-                            >mdi-arrow-right</v-icon
-                        ></router-link
-                    ></span
-                ></v-col
-            >
+            <!-- <v-col cols="3"></v-col> -->
         </v-layout>
-        <hr />
     </v-container>
 </template>
 

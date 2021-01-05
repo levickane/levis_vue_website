@@ -1,10 +1,10 @@
 <template>
     <v-container fluit>
         <v-layout row wrap>
-            <v-col cols="3" class="text-h6 font-weight-bold mt-5"
+            <v-col cols="12" md="3" class="text-h6 font-weight-bold mt-5"
                 >System Requirements</v-col
             >
-            <v-col cols="4" class="mt-5 pr-16">
+            <v-col cols="12" md="4" class="mt-5 pr-16">
                 <v-simple-table
                     class="mytable"
                     v-for="(type, index) in Object.keys(system).slice(0, 1)"
@@ -14,7 +14,6 @@
                         <thead>
                             <tr>
                                 <th
-                                    colspan="2"
                                     class="text-left black--text"
                                     style="font-size: 1em"
                                 >
@@ -41,7 +40,7 @@
                     </template>
                 </v-simple-table>
             </v-col>
-            <v-col cols="4" class="mt-5">
+            <v-col cols="12" md="4" class="mt-5 pr-16">
                 <v-simple-table
                     class="mytable"
                     v-for="(type, index) in Object.keys(system).slice(1, 2)"
@@ -51,7 +50,6 @@
                         <thead>
                             <tr>
                                 <th
-                                    colspan="2"
                                     class="text-left black--text"
                                     style="font-size: 1em"
                                 >

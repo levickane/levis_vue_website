@@ -84,7 +84,6 @@
                     id pulvinar massa egestas vitae.
                 </p>
             </v-col>
-            <hr />
         </v-layout>
     </v-container>
 </template>

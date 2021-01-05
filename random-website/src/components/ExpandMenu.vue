@@ -1,10 +1,10 @@
 <template>
     <v-container>
         <v-layout row wrap>
-            <v-col cols="12" lg="3" class="text-h6 font-weight-bold"
+            <v-col cols="12" lg="2" class="text-h6 font-weight-bold mt-5"
                 >Frequently Asked Questions</v-col
             >
-            <v-col cols="9">
+            <v-col cols="10" class="">
                 <v-layout>
                     <v-col cols="12" class="shrink">
                         <v-col v-for="(item, index) in faqs" :key="index">
@@ -20,8 +20,16 @@
                                 <v-col
                                     cols="1"
                                     @click="item.expand = !item.expand"
-                                    ><v-icon medium color="black"
+                                    ><v-icon
+                                        v-if="!item.expand"
+                                        medium
+                                        color="black"
                                         >mdi-plus</v-icon
+                                    ><v-icon
+                                        v-if="item.expand"
+                                        medium
+                                        color="black"
+                                        >mdi-close</v-icon
                                     ></v-col
                                 >
                             </v-layout>

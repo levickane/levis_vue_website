@@ -4,6 +4,7 @@ import firebase from 'firebase'
 import router from '@/router'
 import jobs from './jobs.json'
 import news from './news.json'
+import system from './system.json'
 
 Vue.use(Vuex);
 
@@ -72,6 +73,9 @@ export default new Vuex.Store({
         },
         getNews() {
             return news
+        },
+        getSystem() {
+            return system
         }
 
     },

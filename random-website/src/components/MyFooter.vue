@@ -33,7 +33,7 @@
                 <v-col class="font-weight-bold mt-5">Services</v-col>
                 <v-col v-for="link in services" :key="link" class="button py-1">
                     <router-link
-                        class="button"
+                        class="text--secondary"
                         :to="`${link.pathway}`"
                         style="text-decoration: none; color: black"
                     >
@@ -54,6 +54,7 @@
                 <v-col class="font-weight-bold mt-5">The Dude</v-col>
                 <v-col v-for="item in theDude" :key="item" class="button py-1">
                     <router-link
+                        class="text--secondary"
                         style="text-decoration: none; color: black"
                         :to="`${item.pathway}`"
                     >

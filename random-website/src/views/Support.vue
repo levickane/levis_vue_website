@@ -36,6 +36,10 @@
         <v-layout>
             <expand-menu></expand-menu>
         </v-layout>
+        <hr />
+        <v-layout>
+            <requirements></requirements>
+        </v-layout>
     </v-container>
 </template>
 
@@ -43,8 +47,9 @@
 import MyVideo from '../components/MyVideo.vue';
 import Setup from '../components/Setup.vue';
 import ExpandMenu from '../components/ExpandMenu.vue';
+import Requirements from '../components/Requirements.vue';
 export default {
-    components: { MyVideo, Setup, ExpandMenu },
+    components: { MyVideo, Setup, ExpandMenu, Requirements },
     name: 'Support',
 };
 </script>

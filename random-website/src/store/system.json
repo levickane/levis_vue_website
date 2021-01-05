@@ -1,0 +1,64 @@
+{
+    "system": {
+        "Required": [
+            {
+                "name": "OS",
+                "details": "Windows 10 (PC/Tablet)"
+            },
+            {
+                "name": "Processor",
+                "details": "i5 xxxx (or better)"
+            },
+            {
+                "name": "Memory",
+                "details": "4GB RAM"
+            },
+            {
+                "name": "Graphics",
+                "details": "Intel HD Graphics 630 or Intel Iris Plus Graphics 640"
+            },
+            {
+                "name": "Storage",
+                "details": "250MB"
+            },
+            {
+                "name": "Network",
+                "details": "Broadband Internet Connection"
+            },
+            {
+                "name": "Aditional Notes",
+                "details": "IT Policy and Firewall configurations-list our servers that need to be whitelisted"
+            }
+        ],
+        "Recommended": [
+            {
+                "name": "OS",
+                "details": "Windows 10 (PC/Tablet)"
+            },
+            {
+                "name": "Processor",
+                "details": "i7 xxxx (or better)"
+            },
+            {
+                "name": "Memory",
+                "details": "8GB RAM"
+            },
+            {
+                "name": "Graphics",
+                "details": "NVIDIA® GeForce® GTX 760 or AMD Radeon™ R7 260x with 2GB Video RAM"
+            },
+            {
+                "name": "Storage",
+                "details": "250MB"
+            },
+            {
+                "name": "Network",
+                "details": "Broadband Internet Connection"
+            },
+            {
+                "name": "Additional Notes",
+                "details": "IT Policy and Firewall configurations-list our servers that need to be whitelisted"
+            }
+        ]
+    }
+}

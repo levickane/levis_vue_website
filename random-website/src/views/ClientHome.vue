@@ -9,7 +9,8 @@
             <v-col cols="12" sm="3" class="mb-10 ml-5"
                 ><v-divider></v-divider
                 ><a
-                    href="../../public/files/LEVI_KANE_DEV_COVER_LETTER .pdf"
+                    style="text-decoration: none; color: black"
+                    href="../assets/files/LEVI_KANE_DEV_COVER_LETTER .pdf"
                     download
                     ><v-img
                         height="100"
@@ -25,14 +26,22 @@
             >
             <v-col cols="12" sm="3" class="mb-10 ml-5"
                 ><v-divider></v-divider
-                ><v-img
-                    height="100"
-                    width="200"
-                    :src="`${pictures.picture1}`"
-                ></v-img
-                ><br /><span class="font-weight-bold" style="font-size: 1.5em"
-                    >Capital Raise Plan</span
-                ><v-icon large>mdi-arrow-collapse-down</v-icon></v-col
+                ><a
+                    style="text-decoration: none; color: black"
+                    href="../assets/files/LEVI_KANE_DEV_RESUME .pdf"
+                    download
+                >
+                    <v-img
+                        height="100"
+                        width="200"
+                        :src="`${pictures.picture1}`"
+                    ></v-img
+                    ><br /><span
+                        class="font-weight-bold"
+                        style="font-size: 1.5em"
+                        >Capital Raise Plan</span
+                    ><v-icon large>mdi-arrow-collapse-down</v-icon></a
+                ></v-col
             >
         </v-layout>
         <have-questions></have-questions>

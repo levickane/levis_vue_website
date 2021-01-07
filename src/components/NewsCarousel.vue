@@ -1,7 +1,7 @@
 <template>
     <v-container grid-list-lg>
-        <v-layout row>
-            <v-col cols="12" class="font-weight-black text-h4">News!!</v-col>
+        <v-layout row wrap>
+            <v-col class="font-weight-black text-h4">News!!</v-col>
         </v-layout>
         <v-layout row wrap>
             <v-col

@@ -14,8 +14,6 @@
                 </div>
             </v-layout>
             <hr />
-        </v-container>
-        <v-container>
             <v-layout row wrap class="my-5">
                 <v-col cols="12" lg="3" xl="3" class="font-weight-black text-h4"
                     >My Mission</v-col

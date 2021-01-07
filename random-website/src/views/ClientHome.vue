@@ -21,7 +21,7 @@
                     ><br /><span
                         class="font-weight-bold"
                         style="font-size: 1.5em"
-                        >Pitch Deck</span
+                        >Levi's Cover Letter</span
                     ><v-icon large>mdi-arrow-collapse-down</v-icon></a
                 ></v-col
             >
@@ -40,7 +40,7 @@
                     ><br /><span
                         class="font-weight-bold"
                         style="font-size: 1.5em"
-                        >Capital Raise Plan</span
+                        >Levi's Resume</span
                     ><v-icon large>mdi-arrow-collapse-down</v-icon></a
                 ></v-col
             >
@@ -58,9 +58,9 @@ export default {
         return {
             pictures: {
                 picture1:
-                    'https://toppng.com/uploads/preview/rolls-and-stacks-of-money-stacks-of-money-11562998046h21kuiihqr.png',
+                    'https://assets.stickpng.com/images/580b585b2edbce24c47b2887.png',
                 picture2:
-                    'https://toppng.com/uploads/preview/computer-icon-vector-png-desktop-computer-11563207085f1wwos2r52.png',
+                    'https://images.vexels.com/media/users/3/157318/isolated/preview/2782b0b66efa5815b12c9c637322aff3-desktop-computer-icon-computer-by-vexels.png',
             },
         };
     },

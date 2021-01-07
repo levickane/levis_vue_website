@@ -10,7 +10,8 @@
                 ><v-divider></v-divider
                 ><a
                     style="text-decoration: none; color: black"
-                    href="../assets/files/LEVI_KANE_DEV_COVER_LETTER .pdf"
+                    href="LEVI_KANE_DEV_COVER_LETTER.pdf"
+                    target="_blank"
                     download
                     ><v-img
                         height="100"
@@ -28,7 +29,7 @@
                 ><v-divider></v-divider
                 ><a
                     style="text-decoration: none; color: black"
-                    href="../assets/files/LEVI_KANE_DEV_RESUME .pdf"
+                    href="LEVI_KANE_DEV_RESUME.pdf"
                     download
                 >
                     <v-img

@@ -9,7 +9,7 @@
             <div
                 class="text-subtitle-1 font-weight-black black--text text-left mt-10"
             >
-                A contact page built from scratch using Vue/Vuex/Routers
+                A paginated news page built from scratch using Vue/Vuex/Routers
             </div>
         </v-layout>
         <v-layout row wrap>

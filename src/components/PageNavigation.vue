@@ -197,7 +197,7 @@ export default {
                 {
                     title: 'Real Estate',
                     picture:
-                        'https://mysuperfoods.files.wordpress.com/2013/04/money.jpg',
+                        'https://images.squarespace-cdn.com/content/v1/5e7e1657b7fbbc04365b0e3e/1585750174266-UET5OOQHNEKP3DF0J4KT/ke17ZwdGBToddI8pDm48kHceFWXZ3GxxjMg-cSd1ZwgUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKc0V-u8h3USQFsKiw8AT3Zcwk_AqyZn8ddWJf_7EaT4-kMmwMqu46asTcbuI6O7Ivb/cash+pile.png',
                     description: 'Earn Passive Income',
                     page: '/realestate',
                 },

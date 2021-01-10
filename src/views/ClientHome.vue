@@ -58,7 +58,7 @@ export default {
         return {
             pictures: {
                 picture1:
-                    'https://assets.stickpng.com/images/580b585b2edbce24c47b2887.png',
+                    'https://mysuperfoods.files.wordpress.com/2013/04/money.jpg',
                 picture2:
                     'https://images.vexels.com/media/users/3/157318/isolated/preview/2782b0b66efa5815b12c9c637322aff3-desktop-computer-icon-computer-by-vexels.png',
             },

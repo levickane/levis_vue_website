@@ -197,7 +197,7 @@ export default {
                 {
                     title: 'Real Estate',
                     picture:
-                        'https://assets.stickpng.com/images/580b585b2edbce24c47b2887.png',
+                        'https://mysuperfoods.files.wordpress.com/2013/04/money.jpg',
                     description: 'Earn Passive Income',
                     page: '/realestate',
                 },

@@ -4,11 +4,7 @@ const postmarkTransport = require('nodemailer-postmark-transport')
 const admin = require('firebase-admin')
 const striptags = require('striptags')
 
-
-
 admin.initializeApp()
-
-
 
 const postmarkKey = functions.config().postmark.key
 const mailTransport = nodemailer.createTransport(postmarkTransport({
@@ -41,6 +37,16 @@ function sendEmail(html) {
         .then(() => console.log('dbMessagesOnUpdate:Welcome confirmation email'))
         .catch((error) => console.error('There was an error while sending the email:', error))
 }
+
+
+
+
+
+
+
+
+
+
 
 // // Create and Deploy Your First Cloud Functions
 // // https://firebase.google.com/docs/functions/write-firebase-functions

@@ -43,7 +43,7 @@
                 <v-col>
                     <v-btn
                         class="font-weight-black"
-                        outlined="False"
+                        outlined
                         to="/testimonials"
                     >
                         Testimonials</v-btn

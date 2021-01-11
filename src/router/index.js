@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import store from '@/store/index.js';
 import Home from '../views/Home.vue';
 
 Vue.use(VueRouter);
@@ -88,7 +89,10 @@ const router = new VueRouter({
             name: 'ClientLHome',
 
             component: () =>
-                import('../views/ClientHome.vue')
+                import('../views/ClientHome.vue'),
+            meta: {
+                authRequired: true
+            }
         },
         {
             path: '/support',
@@ -113,5 +117,21 @@ const router = new VueRouter({
         },
     ]
 });
+
+
+router.beforeEach((to, from, next) => {
+    if (to.meta.authRequired) {
+        if (!store.state.isAuthenticated) {
+            next({ name: 'Home' })
+        }
+        else {
+            next()
+        }
+    } else {
+        next()
+    }
+})
+
+
 
 export default router;

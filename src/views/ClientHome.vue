@@ -10,7 +10,7 @@
                 ><v-divider></v-divider
                 ><a
                     style="text-decoration: none; color: black"
-                    href="LEVI_KANE_DEV_COVER_LETTER.pdf"
+                    href="Levi_Kane_Cover_Letter.pdf"
                     target="_blank"
                     download
                     ><v-img
@@ -29,7 +29,7 @@
                 ><v-divider></v-divider
                 ><a
                     style="text-decoration: none; color: black"
-                    href="LEVI_KANE_DEV_RESUME.pdf"
+                    href="RESUME.pdf"
                     download
                 >
                     <v-img
@@ -60,12 +60,11 @@ export default {
                 picture1:
                     'https://images.squarespace-cdn.com/content/v1/5e7e1657b7fbbc04365b0e3e/1585750174266-UET5OOQHNEKP3DF0J4KT/ke17ZwdGBToddI8pDm48kHceFWXZ3GxxjMg-cSd1ZwgUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKc0V-u8h3USQFsKiw8AT3Zcwk_AqyZn8ddWJf_7EaT4-kMmwMqu46asTcbuI6O7Ivb/cash+pile.png',
                 picture2:
-                    'https://images.vexels.com/media/users/3/157318/isolated/preview/2782b0b66efa5815b12c9c637322aff3-desktop-computer-icon-computer-by-vexels.png',
-            },
+                    'https://images.vexels.com/media/users/3/157318/isolated/preview/2782b0b66efa5815b12c9c637322aff3-desktop-computer-icon-computer-by-vexels.png'
+            }
         };
-    },
+    }
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

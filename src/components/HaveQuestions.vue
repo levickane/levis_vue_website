@@ -27,7 +27,7 @@
 
 <script>
 export default {
-    name: 'HaveQuestions',
+    name: 'HaveQuestions'
 };
 </script>
 

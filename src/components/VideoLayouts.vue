@@ -71,21 +71,20 @@ export default {
                 height: '300',
                 frameborder: '0',
                 allow:
-                    'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture',
+                    'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
             },
             video1: {
-                src: 'https://www.youtube.com/embed/GlnZoMZ7z2g',
+                src: 'https://www.youtube.com/embed/GlnZoMZ7z2g'
             },
             video2: {
-                src: 'https://www.youtube.com/embed/E-gJl5DAE4g',
+                src: 'https://www.youtube.com/embed/E-gJl5DAE4g'
             },
             video3: {
-                src: 'https://www.youtube.com/embed/4S95iDJXAUo',
-            },
+                src: 'https://www.youtube.com/embed/4S95iDJXAUo'
+            }
         };
-    },
+    }
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

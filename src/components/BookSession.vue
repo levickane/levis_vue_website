@@ -95,22 +95,22 @@ export default {
     data: () => ({
         valid: true,
         name: '',
-        nameRules: [(v) => !!v || 'Name is required'],
+        nameRules: [v => !!v || 'Name is required'],
         email: '',
         emailRules: [
-            (v) => !!v || 'E-mail is required',
-            (v) => /.+@.+\..+/.test(v) || 'E-mail must be valid',
+            v => !!v || 'E-mail is required',
+            v => /.+@.+\..+/.test(v) || 'E-mail must be valid'
         ],
         message: '',
         messageRules: [
-            (v) => !!v || 'A message is required',
-            (v) =>
+            v => !!v || 'A message is required',
+            v =>
                 (v && v.length >= 20) ||
-                'Enter a message with at least 20 characters',
-        ],
+                'Enter a message with at least 20 characters'
+        ]
     }),
     methods: {
-        saveContactMessage: function (e) {
+        saveContactMessage: function(e) {
             e.preventDefault();
             const messagesRef = this.$firebaseDatabase.collection('message');
             messagesRef.add({
@@ -120,7 +120,7 @@ export default {
                 organization: this.organization,
                 location: this.location,
                 message: this.message,
-                time: new Date(),
+                time: new Date()
             });
             (this.name = ''),
                 (this.email = ''),
@@ -131,10 +131,9 @@ export default {
                 (this.submitted = true),
                 (this.snackbar = false);
             router.push('/');
-        },
-    },
+        }
+    }
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

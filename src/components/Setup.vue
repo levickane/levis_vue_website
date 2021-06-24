@@ -38,7 +38,7 @@
 
 <script>
 export default {
-    name: 'Careers',
+    name: 'Careers'
 };
 </script>
 

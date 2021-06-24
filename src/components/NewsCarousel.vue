@@ -39,16 +39,15 @@ export default {
     name: 'NewsCarousel',
     data() {
         return {
-            newsLinks: {},
+            newsLinks: {}
         };
     },
 
     async created() {
         const newsData = await this.$store.dispatch('getNews');
         this.newsLinks = newsData.news.newsLinks;
-    },
+    }
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

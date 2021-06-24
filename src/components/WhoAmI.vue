@@ -24,7 +24,7 @@
 
 <script>
 export default {
-    name: 'WhoAmI',
+    name: 'WhoAmI'
 };
 </script>
 

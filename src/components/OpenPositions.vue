@@ -51,12 +51,12 @@ export default {
     name: 'OpenPositons',
     data() {
         return {
-            jobs: {},
+            jobs: {}
         };
     },
     async created() {
         const jobData = await this.$store.dispatch('getJobs');
         this.jobs = jobData.jobs;
-    },
+    }
 };
 </script>

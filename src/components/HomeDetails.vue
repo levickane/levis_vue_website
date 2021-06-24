@@ -92,9 +92,8 @@
 import MyVideo from './MyVideo.vue';
 export default {
     components: { MyVideo },
-    name: 'HomeDetails',
+    name: 'HomeDetails'
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

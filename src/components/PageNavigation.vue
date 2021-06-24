@@ -184,7 +184,7 @@ export default {
             items: [
                 { title: 'About', page: '/about' },
                 { title: 'Testimonials', page: '/testimonials' },
-                { title: 'Contact Me', page: '/contact' },
+                { title: 'Contact Me', page: '/contact' }
             ],
             dropdown: [
                 {
@@ -192,37 +192,36 @@ export default {
                     picture:
                         'https://purepng.com/public/uploads/large/purepng.com-musclemusclemuscle-manbody-builderssix-packmuscle-boys-1421526926221lvohc.png',
                     description: 'Learn how to not be fat',
-                    page: '/fitness',
+                    page: '/fitness'
                 },
                 {
                     title: 'Real Estate',
                     picture:
                         'https://images.squarespace-cdn.com/content/v1/5e7e1657b7fbbc04365b0e3e/1585750174266-UET5OOQHNEKP3DF0J4KT/ke17ZwdGBToddI8pDm48kHceFWXZ3GxxjMg-cSd1ZwgUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKc0V-u8h3USQFsKiw8AT3Zcwk_AqyZn8ddWJf_7EaT4-kMmwMqu46asTcbuI6O7Ivb/cash+pile.png',
                     description: 'Earn Passive Income',
-                    page: '/realestate',
+                    page: '/realestate'
                 },
                 {
                     title: 'Coding',
                     picture:
                         'https://images.vexels.com/media/users/3/157318/isolated/preview/2782b0b66efa5815b12c9c637322aff3-desktop-computer-icon-computer-by-vexels.png',
                     description: 'Sit down all day long',
-                    page: '/coding',
-                },
-            ],
+                    page: '/coding'
+                }
+            ]
         };
     },
     computed: {
         isAuthenticated() {
             return this.$store.getters.isAuthenticated;
-        },
+        }
     },
     methods: {
         logout() {
             this.$store.dispatch('userSignOut');
-        },
-    },
+        }
+    }
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

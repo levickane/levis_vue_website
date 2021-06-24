@@ -105,34 +105,33 @@ export default {
     data: () => ({
         valid: true,
         name: '',
-        nameRules: [(v) => !!v || 'Name is required'],
+        nameRules: [v => !!v || 'Name is required'],
         email: '',
         emailRules: [
-            (v) => !!v || 'E-mail is required',
-            (v) => /.+@.+\..+/.test(v) || 'E-mail must be valid',
+            v => !!v || 'E-mail is required',
+            v => /.+@.+\..+/.test(v) || 'E-mail must be valid'
         ],
         phone: '',
         phoneRules: [
-            (v) => !!v || 'Phone number is required',
-            (v) => /^\d+$/.test(v) || 'This field only accepts numbers',
-            (v) =>
-                /^\d{10}$/.test(v) ||
-                'Must enter a valid 10-digit phone number',
+            v => !!v || 'Phone number is required',
+            v => /^\d+$/.test(v) || 'This field only accepts numbers',
+            v =>
+                /^\d{10}$/.test(v) || 'Must enter a valid 10-digit phone number'
         ],
         organization: '',
-        organizationRules: [(v) => !!v || 'Input is required'],
+        organizationRules: [v => !!v || 'Input is required'],
         location: '',
-        locationRules: [(v) => !!v || 'Location is required'],
+        locationRules: [v => !!v || 'Location is required'],
         message: '',
         messageRules: [
-            (v) => !!v || 'A message is required',
-            (v) =>
+            v => !!v || 'A message is required',
+            v =>
                 (v && v.length >= 50) ||
-                'Enter a message with at least 50 characters',
-        ],
+                'Enter a message with at least 50 characters'
+        ]
     }),
     methods: {
-        saveContactMessage: function (e) {
+        saveContactMessage: function(e) {
             e.preventDefault();
             const messagesRef = this.$firebaseDatabase.collection('message');
             messagesRef.add({
@@ -142,7 +141,7 @@ export default {
                 organization: this.organization,
                 location: this.location,
                 message: this.message,
-                time: new Date(),
+                time: new Date()
             });
             (this.name = ''),
                 (this.email = ''),
@@ -153,10 +152,9 @@ export default {
                 (this.submitted = true),
                 (this.snackbar = false);
             router.push('/');
-        },
-    },
+        }
+    }
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

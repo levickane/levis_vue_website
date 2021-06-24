@@ -86,7 +86,6 @@
     </v-container>
 </template>
 
-
 <script>
 export default {
     name: 'MyFooter',
@@ -97,16 +96,16 @@ export default {
                 { page: 'Contact Me', pathway: '/contact' },
                 { page: 'Testimonials', pathway: '/testimonials' },
                 { page: 'News', pathway: '/news' },
-                { page: 'Careers', pathway: '/careers' },
+                { page: 'Careers', pathway: '/careers' }
             ],
             services: [
                 { page: 'Fitness', pathway: '/fitness' },
                 { page: 'Real Estate', pathway: '/realestate' },
                 { page: 'Coding', pathway: '/coding' },
-                { page: 'Support', pathway: '/support' },
-            ],
+                { page: 'Support', pathway: '/support' }
+            ]
         };
-    },
+    }
 };
 </script>
 

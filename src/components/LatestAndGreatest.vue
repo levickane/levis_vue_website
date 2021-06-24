@@ -13,9 +13,8 @@
 
 <script>
 export default {
-    name: 'LatestAndGreatest',
+    name: 'LatestAndGreatest'
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

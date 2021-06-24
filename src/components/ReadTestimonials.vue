@@ -31,7 +31,7 @@
 
 <script>
 export default {
-    name: 'ReadTestimonials',
+    name: 'ReadTestimonials'
 };
 </script>
 

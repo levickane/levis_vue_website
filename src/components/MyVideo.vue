@@ -13,7 +13,7 @@
 
 <script>
 export default {
-    name: 'MyVideo',
+    name: 'MyVideo'
 };
 </script>
 <style scoped>

@@ -85,13 +85,13 @@ export default {
     name: 'Requirements',
     data() {
         return {
-            system: {},
+            system: {}
         };
     },
     async created() {
         const systemData = await this.$store.dispatch('getSystem');
         this.system = systemData.system;
-    },
+    }
 };
 </script>
 

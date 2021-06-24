@@ -65,7 +65,7 @@
 
 <script>
 export default {
-    name: 'ServicePreviews',
+    name: 'ServicePreviews'
 };
 </script>
 <style scoped>

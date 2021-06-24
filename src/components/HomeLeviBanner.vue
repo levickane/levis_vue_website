@@ -31,9 +31,8 @@
 
 <script>
 export default {
-    name: 'HomeLeviBanner',
+    name: 'HomeLeviBanner'
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

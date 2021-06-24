@@ -18,78 +18,67 @@ const router = new VueRouter({
             path: '/about',
             name: 'About',
 
-            component: () =>
-                import('../views/About.vue')
+            component: () => import('../views/About.vue')
         },
         {
             path: '/coding',
             name: 'Coding',
 
-            component: () =>
-                import('../views/Coding.vue')
+            component: () => import('../views/Coding.vue')
         },
         {
             path: '/contact',
             name: 'ContanctMe',
 
-            component: () =>
-                import('../views/ContactMe.vue')
+            component: () => import('../views/ContactMe.vue')
         },
         {
             path: '/fitness',
             name: 'Fitness',
 
-            component: () =>
-                import('../views/Fitness.vue')
+            component: () => import('../views/Fitness.vue')
         },
         {
             path: '/realestate',
             name: 'RealEstate',
 
-            component: () =>
-                import('../views/RealEstate.vue')
+            component: () => import('../views/RealEstate.vue')
         },
         {
             path: '/testimonials',
             name: 'Testimonials',
 
-            component: () =>
-                import('../views/Testimonials.vue')
+            component: () => import('../views/Testimonials.vue')
         },
         {
             path: '/privacy',
             name: 'Privacy',
 
-            component: () =>
-                import('../views/Privacy.vue')
+            component: () => import('../views/Privacy.vue')
         },
         {
             path: '/termsofuse',
             name: 'TermsOfUse',
 
-            component: () =>
-                import('../views/TermsOfUse.vue')
+            component: () => import('../views/TermsOfUse.vue')
         },
         {
             path: '/clientjoin',
             name: 'ClientJoin',
 
-            component: () =>
-                import('../views/ClientJoin.vue')
+            component: () => import('../views/ClientJoin.vue')
         },
         {
             path: '/clientlogin',
             name: 'ClientLogin',
 
-            component: () =>
-                import('../views/ClientLogin.vue')
+            component: () => import('../views/ClientLogin.vue')
         },
         {
             path: '/clienthome',
             name: 'ClientLHome',
 
-            component: () =>
-                import('../views/ClientHome.vue'),
+            component: () => import('../views/ClientHome.vue'),
             meta: {
                 authRequired: true
             }
@@ -98,40 +87,33 @@ const router = new VueRouter({
             path: '/support',
             name: 'Support',
 
-            component: () =>
-                import('../views/Support.vue')
+            component: () => import('../views/Support.vue')
         },
         {
             path: '/news',
             name: 'News',
 
-            component: () =>
-                import('../views/News.vue')
+            component: () => import('../views/News.vue')
         },
         {
             path: '/careers',
             name: 'CareerPage',
 
-            component: () =>
-                import('../views/CareerPage.vue')
-        },
+            component: () => import('../views/CareerPage.vue')
+        }
     ]
 });
-
 
 router.beforeEach((to, from, next) => {
     if (to.meta.authRequired) {
         if (!store.state.isAuthenticated) {
-            next({ name: 'Home' })
-        }
-        else {
-            next()
+            next({ name: 'Home' });
+        } else {
+            next();
         }
     } else {
-        next()
+        next();
     }
-})
-
-
+});
 
 export default router;

@@ -31,7 +31,11 @@
             </v-col>
             <v-col cols="6" md="2" lg="2" xl="2">
                 <v-col class="font-weight-bold mt-5">Services</v-col>
-                <v-col v-for="link in services" :key="link" class="button py-1">
+                <v-col
+                    v-for="link in services"
+                    :key="link.page"
+                    class="button py-1"
+                >
                     <router-link
                         class="text--secondary"
                         :to="`${link.pathway}`"
@@ -52,7 +56,11 @@
             </v-col>
             <v-col cols="6" md="2" lg="2" xl="2">
                 <v-col class="font-weight-bold mt-5">The Dude</v-col>
-                <v-col v-for="item in theDude" :key="item" class="button py-1">
+                <v-col
+                    v-for="item in theDude"
+                    :key="item.page"
+                    class="button py-1"
+                >
                     <router-link
                         class="text--secondary"
                         style="text-decoration: none; color: black"

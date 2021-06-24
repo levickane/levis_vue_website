@@ -13,9 +13,8 @@
 import ReadTestimonials from '../components/ReadTestimonials.vue';
 export default {
     components: { ReadTestimonials },
-    name: 'Privacy',
+    name: 'Privacy'
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

@@ -23,9 +23,8 @@ import ReadTestimonials from '../components/ReadTestimonials.vue';
 import BigContactForm from '../components/BigContactForm.vue';
 export default {
     components: { ReadTestimonials, BigContactForm },
-    name: 'ContactMe',
+    name: 'ContactMe'
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

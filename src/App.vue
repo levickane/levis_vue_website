@@ -16,10 +16,10 @@ export default {
     name: 'App',
     components: {
         PageNavigation,
-        MyFooter,
+        MyFooter
     },
     data: () => ({
         //
-    }),
+    })
 };
 </script>

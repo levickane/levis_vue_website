@@ -13,9 +13,8 @@
 import ReadTestimonials from '../components/ReadTestimonials.vue';
 export default {
     components: { ReadTestimonials },
-    name: 'TermsOfUse',
+    name: 'TermsOfUse'
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

@@ -50,8 +50,7 @@ import ExpandMenu from '../components/ExpandMenu.vue';
 import Requirements from '../components/Requirements.vue';
 export default {
     components: { MyVideo, Setup, ExpandMenu, Requirements },
-    name: 'Support',
+    name: 'Support'
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

@@ -61,15 +61,15 @@ export default {
             email: '',
             password: '',
             emailRules: [
-                (v) => !!v || 'E-mail is required',
-                (v) => /.+@.+/.test(v) || 'E-mail must be valid',
+                v => !!v || 'E-mail is required',
+                v => /.+@.+/.test(v) || 'E-mail must be valid'
             ],
             passwordRules: [
-                (v) => !!v || 'Password is required',
-                (v) =>
+                v => !!v || 'Password is required',
+                v =>
                     v.length >= 6 ||
-                    'Password must be greater than 6 characters',
-            ],
+                    'Password must be greater than 6 characters'
+            ]
         };
     },
     methods: {
@@ -77,13 +77,12 @@ export default {
             if (this.$refs.form.validate()) {
                 this.$store.dispatch('userLogin', {
                     email: this.email,
-                    password: this.password,
+                    password: this.password
                 });
             }
-        },
-    },
+        }
+    }
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

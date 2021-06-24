@@ -59,7 +59,7 @@ export default {
             posts: [],
             page: 1,
             perPage: 9,
-            totalPages: [],
+            totalPages: []
         };
     },
     methods: {
@@ -69,12 +69,12 @@ export default {
             let from = page * perPage - perPage;
             let to = page * perPage;
             return posts.slice(from, to);
-        },
+        }
     },
     computed: {
         displayedLinks() {
             return this.paginate(this.posts);
-        },
+        }
     },
     async created() {
         const newsData = await this.$store.dispatch('getNews');
@@ -84,8 +84,7 @@ export default {
             this.totalPages.push(i);
             console.log(this.posts);
         }
-    },
+    }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

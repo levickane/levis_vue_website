@@ -27,9 +27,8 @@ export default {
         WhoAmI,
         ServicePreviews,
         LatestAndGreatest,
-        ReadTestimonials,
-    },
+        ReadTestimonials
+    }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

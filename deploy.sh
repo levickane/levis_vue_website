@@ -10,5 +10,5 @@ cd dist
 git init
 git add -A
 git commit -m 'deploy'
-git push -f git@github.com:levickane/levickane.git main
+git push -f git@github.com:levickane/levis_vue_website.git main:gh-pages
 cd -

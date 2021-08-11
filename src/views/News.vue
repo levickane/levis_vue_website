@@ -12,7 +12,6 @@
                 A paginated news page built from scratch using Vue/Vuex/Routers
             </div>
         </v-layout>
-        <hr />
         <v-layout row wrap>
             <v-col
                 cols="12"

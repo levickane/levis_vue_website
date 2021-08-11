@@ -4,7 +4,7 @@
             <v-col cols="12" lg="3" md="3" class="text-h6 font-weight-bold mt-5"
                 >Setup for Success</v-col
             >
-            <v-col cols="9">
+            <v-col cols="12" md="9">
                 <v-layout row wrap class="background my-5">
                     <v-col>
                         <div class="text-h3 font-weight-bold">Careers</div>

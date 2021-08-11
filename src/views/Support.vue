@@ -25,7 +25,7 @@
             <div>
                 <p class="subtitle-2">Learn the basics of how to not lose</p>
             </div>
-            <my-video></my-video>
+            <my-video style="width:90vw"></my-video>
         </v-layout>
         <hr />
 

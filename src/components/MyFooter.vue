@@ -7,8 +7,8 @@
                     >Levi's Website</v-col
                 >
                 <v-col cols="12"
-                    >Crafting the next generation <br />
-                    of awesome people</v-col
+                    >Engineering the next generation <br />
+                    of awesome software</v-col
                 >
                 <v-col cols="12">
                     <v-icon color="black">mdi-copyright</v-icon>

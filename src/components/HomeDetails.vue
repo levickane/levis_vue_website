@@ -1,7 +1,9 @@
 <template>
     <v-container>
         <v-layout column>
-            <v-col class="text-h3 my-5">Big Title Goes Here</v-col>
+            <v-col class="text-h3 my-5"
+                >Making Normal Software Abnormally Awesome</v-col
+            >
             <v-col>
                 <div class="headline mt-3">Lorem ipsum</div>
 

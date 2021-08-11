@@ -184,7 +184,7 @@ export default {
     name: 'PageNavigation',
     data() {
         return {
-            websiteTitle: "Levi's Test Website",
+            websiteTitle: "Levi's Vue Website",
             drawer: false,
             items: [
                 { title: 'About', page: '/about' },

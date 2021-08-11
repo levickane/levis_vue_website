@@ -1,18 +1,19 @@
 <template>
-    <v-container fluid style="background-color: black">
-        <v-layout justify-left align-left column pa-5 my-10 row wrap>
+    <!-- <v-container fluid style="background-color: black"> -->
+    <v-container fluid class="hero">
+        <v-layout justify-left align-left column pa-5 row wrap class="titles">
             <div
-                class="text-h1 font-weight-black blue--text text-decoration-underline text-left"
+                class="title1 text-h1 font-weight-black text-decoration-underline text-left"
             >
-                LEVI KANE'S
+                LEVI KANE
             </div>
             <div
-                class="text-h2 text-lg-h1 text-xl-h1 font-weight-bold blue--text text-decoration-underline text-left"
+                class="title2  text-h4 text-lg-h1 text-xl-h1 font-weight-bold text-left"
             >
-                WEBSITE
+                Software Engineer
             </div>
             <div
-                class="text-subtitle-1 font-weight-black blue--text text-left mt-10"
+                class="title3 text-subtitle-1 font-weight-black  text-left mt-10"
             >
                 A website built from scratch using Vue/Vuex/Routers and
                 Firebase/Firestore
@@ -36,4 +37,38 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.hero {
+    background-image: url('../assets/logo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.title1 {
+    margin-top: 100px;
+}
+.title2 {
+    margin-top: 50px;
+}
+@media only screen and (max-width: 515px) {
+    .hero {
+        background-image: url('../assets/logo.jpg');
+        height: 100%;
+    }
+    .title1 {
+        transform: scale(0.8);
+        margin-left: -30px;
+        margin-top: -30px;
+    }
+    .title2 {
+        transform: scale(0.8);
+        margin-left: -30px;
+        margin-top: -20px;
+    }
+    .title3 {
+        display: none;
+    }
+    .titles {
+        margin: none;
+    }
+}
+</style>

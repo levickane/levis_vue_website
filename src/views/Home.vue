@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="my-n6">
         <home-levi-banner></home-levi-banner>
         <home-details></home-details>
         <hr />

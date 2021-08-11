@@ -7,7 +7,7 @@
             <div
                 class="text-subtitle-1 font-weight-black black--text text-left mt-10"
             >
-                A contact page built from scratch using Vue/Vuex/Routers
+                Join or Login for a downloadable PDF version of my Resumé
             </div>
         </v-layout>
         <hr />

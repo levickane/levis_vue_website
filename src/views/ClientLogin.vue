@@ -4,8 +4,9 @@
             <v-layout align-center justify-center>
                 <v-col xs="12" sm="10" md="8" lg="6">
                     <v-card class="elevation-12 font-weight-bold">
-                        <v-toolbar dark color="red"
-                            >Sign In To My Life!</v-toolbar
+                        <v-toolbar dark color="green" class="black--text"
+                            >Sign in for exclusive access to more of what I have
+                            to offer!</v-toolbar
                         >
                         <v-card-text>
                             <v-form ref="form" v-model="valid" lazy-validation>

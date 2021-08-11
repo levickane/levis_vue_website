@@ -1,33 +1,35 @@
 <template>
-    <v-container>
+    <v-container fluid>
+        <v-layout justify-left align-left column py-16 class="my-16">
+            <div class="text-h1 font-weight-black black--text text-left">
+                Testimonials
+            </div>
+            <div
+                class="text-subtitle-1 font-weight-black black--text text-left mt-10"
+            >
+                What are they saying?
+            </div>
+        </v-layout>
+        <hr class="mb-10" />
         <v-layout row wrap>
-            <v-col cols="12">
-                <h1>
-                    Testimonials
-                </h1>
+            <v-col cols="12" v-for="(item, index) in techReviews" :key="index">
+                <v-card class="pa-3">
+                    <v-layout row wrap>
+                        <v-col cols="6" md="2"
+                            ><v-img
+                                :src="`${item.profilePic}`"
+                                style="border-radius:50%"
+                        /></v-col>
+                        <v-col cols="6" md="2"
+                            ><h4>{{ item.person }}</h4>
+                            <p>{{ item.jobTitle }}</p></v-col
+                        >
+                        <v-col cols="12" md="8">{{ item.testimony }}</v-col>
+                    </v-layout>
+                </v-card>
             </v-col>
-            <v-layout row wrap>
-                <v-col
-                    cols="12"
-                    v-for="(item, index) in techReviews"
-                    :key="index"
-                >
-                    <v-card class="pa-3">
-                        <v-layout row wrap>
-                            <v-col cols="6" md="2"
-                                ><v-img
-                                    :src="`${item.profilePic}`"
-                                    style="border-radius:50%"
-                            /></v-col>
-                            <v-col cols="6" md="2"
-                                ><h4>{{ item.person }}</h4>
-                                <p>{{ item.jobTitle }}</p></v-col
-                            >
-                            <v-col cols="12" md="8">{{ item.testimony }}</v-col>
-                        </v-layout>
-                    </v-card>
-                </v-col>
-            </v-layout>
+        </v-layout>
+        <v-layout row wrap>
             <v-col cols="6" md="4">
                 <h2>Fitness reviews:</h2>
                 <h4>

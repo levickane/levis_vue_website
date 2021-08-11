@@ -1,9 +1,7 @@
 <template>
     <v-container fluid>
         <v-layout justify-left align-left column py-16 class="my-16">
-            <div
-                class="text-h1 font-weight-black black--text text-decoration-underline text-left"
-            >
+            <div class="text-h1 font-weight-black black--text text-left">
                 Contact Me
             </div>
             <div

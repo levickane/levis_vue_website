@@ -5,9 +5,13 @@
                 >Who Am I?</v-col
             >
             <v-col cols="9"
-                >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-                pulvinar risus quis mauris interdum, in euismod nibh pretium.
-                Etiam pulvinar tincidunt dapibus.<span class="black--text"
+                >A Northwestern University Full Stack Bootcamp graduate.
+                Dedicated and driven individual with experience producing high
+                quality, scalable, testable, full stack code. Quick to learn,
+                hungry to learn more, full of passion and dedication, Levi will
+                stop at nothing to deliver his absolute best. With creativity
+                and ingenuity to fuel his fire, grit and hustle are two things
+                that he cannot live without.<span class="black--text"
                     ><br /><br /><router-link
                         style="text-decoration: none; color: black"
                         to="/about"

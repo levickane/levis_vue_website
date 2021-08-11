@@ -108,28 +108,33 @@
                 }}</v-toolbar-title>
             </router-link>
             <v-spacer class="hidden-sm-and-down"></v-spacer>
-            <v-btn color="black" class="hidden-sm-and-down" to="/about"
+            <v-btn tile color="black" class="hidden-sm-and-down" to="/about"
                 >About</v-btn
             >
-            <v-btn color="black" class="hidden-sm-and-down" to="/contact"
+            <v-btn tile color="black" class="hidden-sm-and-down" to="/contact"
                 >Contact Me</v-btn
             >
-            <v-btn color="black" class="hidden-sm-and-down" to="/testimonials"
+            <v-btn
+                tile
+                color="black"
+                class="hidden-sm-and-down"
+                to="/testimonials"
                 >Testimonials</v-btn
             >
             <div v-if="!isAuthenticated" class="hidden-sm-and-down">
-                <v-btn color="black" to="/clientlogin">LOGIN</v-btn>
-                <v-btn color="green darken-1" to="/clientjoin">JOIN</v-btn>
+                <v-btn tile color="black" to="/clientlogin">LOGIN</v-btn>
+                <v-btn tile color="green darken-1" to="/clientjoin">JOIN</v-btn>
             </div>
             <div v-else class="hidden-sm-and-down">
-                <v-btn color="black" to="/clienthome">Profile</v-btn>
-                <v-btn outline color="green darken-1" @click="logout"
+                <v-btn tile color="black" to="/clienthome">Profile</v-btn>
+                <v-btn tile outline color="green darken-1" @click="logout"
                     >Logout</v-btn
                 >
             </div>
             <v-menu open-on-hover bottom offset-y>
                 <template v-slot:activator="{ on, attrs }">
                     <v-btn
+                        tile
                         class="hidden-sm-and-down"
                         color="black"
                         dark

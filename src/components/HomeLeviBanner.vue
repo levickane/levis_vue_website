@@ -4,17 +4,18 @@
             <div
                 class="text-h1 font-weight-black blue--text text-decoration-underline text-left"
             >
-                LEVI'S
+                LEVI KANE'S
             </div>
             <div
                 class="text-h2 text-lg-h1 text-xl-h1 font-weight-bold blue--text text-decoration-underline text-left"
             >
-                TEST WEBSITE
+                WEBSITE
             </div>
             <div
                 class="text-subtitle-1 font-weight-black blue--text text-left mt-10"
             >
-                A website built from scratch using Vue/Vuex/Routers
+                A website built from scratch using Vue/Vuex/Routers and
+                Firebase/Firestore
             </div>
         </v-layout>
         <v-btn

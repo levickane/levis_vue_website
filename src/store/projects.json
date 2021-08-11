@@ -1,6 +1,7 @@
 [
     {
         "id": "thirteen",
+        "expand": false,
         "title": "PechaKucha",
         "technologies": "JavaScript, Axios, Chartjs, React, React-Bootstrap",
         "description": "My first job after my coding bootcamp as a Front-End Software Development Engineer. Tasks included: implementing new dynamic functional components, refactoring legacy code for responsiveness, implementing conditional rendering with CRUD functionalities for specific users, implementing additional dynamic functionalities based on user feedback",
@@ -9,6 +10,7 @@
     },
     {
         "id": "one",
+        "expand": false,
         "title": "New Game Plus",
         "technologies": "Vue/Vuex/Vuetify, Firebase, Postmark",
         "description": "This was a dynamic website made with the Vue framework for a company that I interned for. It displays their main products along with information pertaining to each product and information about the company as a whole. It allows for users to contact them through their contact form, developers can apply for jobs, and allows investors/stakeholders to login.",
@@ -17,6 +19,7 @@
     },
     {
         "id": "twelve",
+        "expand": false,
         "title": "React Website",
         "technologies": "React, Bootstrap",
         "description": "This was a dynamic website made with the React framework. I built this while finishing up my Full Stack bootcamp with Northwestern University",
@@ -26,6 +29,7 @@
     },
     {
         "id": "four",
+        "expand": false,
         "title": "Chicago Boating App",
         "technologies": "Node, Express, MongoDB, Bootstrap, Axios, React-Bootstrap, JavaScript",
         "description": "This application was built to display a 7 day marine weather forecast. Once logged in a user can create an itinerary for the day with the best weather conditions. A user can also save a harbor as their favorite harbor.",
@@ -35,6 +39,7 @@
     },
     {
         "id": "three",
+        "expand": false,
         "title": "Expense Tracker 7000",
         "technologies": "Node, Express, Handlebars, MySql/Sequelize, JawsDB, Chartjs, Bootstrap, JQuery, JavaScript",
         "description": "This application was built to track the user's expenses and to display the users running total over time via line Chart. A user can login to their account and see all of their data which is stored in JawsDB via Heroku.",
@@ -44,6 +49,7 @@
     },
     {
         "id": "ten",
+        "expand": false,
         "title": "Google Book Search",
         "technologies": "MonogDB/Mongoose, Express, React, Node, Bootstrap, Axios, JavaScript",
         "description": "This application was built to saerch the Google books api for your favorite book or author. You can then save that book to your favorites or delete it from your favorites",
@@ -53,6 +59,7 @@
     },
     {
         "id": "nine",
+        "expand": false,
         "title": "Tech Blog",
         "technologies": "Node, Express, Handlebars, MySql/Sequelize, JawsDB, Bootstrap, JQuery, JavaScript",
         "description": "This application was built to display all blog posts from all users. A user can login can add blogs as well as comment on other blogs. They can also update and delete their own blog posts. All comments are displayed with the comment author as well as the date that they commented.",
@@ -62,6 +69,7 @@
     },
     {
         "id": "eleven",
+        "expand": false,
         "title": "Budget Tracker",
         "technologies": "MongoDB/Mongoose, Express, Node, IndexedDB, ServiceWorker, WebManifest, Bootstrap, ChartJs, JavaScript",
         "description": "This application was built to track all of your budgeting needs over time and displayed on ChartJs. Even while offline, your input will get cached on the browser and then later, when back online, your data will be added to the database!",
@@ -71,6 +79,7 @@
     },
     {
         "id": "two",
+        "expand": false,
         "title": "Expense Tracker 5000",
         "technologies": "Fetch API, JS, JQuery, Materialize, LocalStorage",
         "description": "This application was built to track the user's expenses and incomes to display the users running total. All data is stored via local storage.",
@@ -80,6 +89,7 @@
     },
     {
         "id": "five",
+        "expand": false,
         "title": "Fitness Tracker",
         "technologies": "JavaScript, JQuery, MongoDB/Mongoose, Express, Chartjs, Bootstrap",
         "description": "This application was built to track the user's exercises over time and displayed on Line & Bar Charts via Chart.js . A user can login to their account and see all data over the last 7 days which is stored in a MongoDB.",
@@ -89,6 +99,7 @@
     },
     {
         "id": "six",
+        "expand": false,
         "title": "Weather App",
         "technologies": "Fetch API, Bootstrap, JQuery, localStorage",
         "description": "This application was built to display the current Weather for the day as well as a 7 day forcast. The user can type in a location and the weather will be displayed. All previous searches will be saved for quick searching access.",
@@ -98,6 +109,7 @@
     },
     {
         "id": "seven",
+        "expand": false,
         "title": "Team Profile Generator",
         "technologies": "Node, Inquire, Jest, JavaScript, Bootstrap",
         "description": "This Node application was built to display a website based on a user's input to the inquire package. It will display the company's team laid out in Bootstrap formatted cards.",
@@ -107,6 +119,7 @@
     },
     {
         "id": "eight",
+        "expand": false,
         "title": "Hot Restaurant",
         "technologies": "Express, RESTful APIs, Bootstrap, JQuery, JavaScript",
         "description": "This application was built to display all reservations for restaurant. The restaurant can only accept a limited amount of seats at a time. All other reservations will be put on a waitlist. As the seats clear, the waitlist will populate the restaurant.",

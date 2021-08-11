@@ -1,8 +1,37 @@
 <template>
     <v-container fluid>
         <v-layout justify-left align-left column py-16 class="my-16">
-            <div class="text-h1 font-weight-black black--text text-left my-16">
-                Your Profile
+            <div class="text-h1 font-weight-black black--text text-left my-8">
+                The Goods
+            </div>
+            <div
+                class="text-subtitle-1 font-weight-black black--text text-left mt-10"
+            >
+                <ul
+                    style="list-style-type: none; display: inline-block; float:left"
+                >
+                    <li>
+                        <v-icon large color="black">mdi-linkedin</v-icon>
+                        <a
+                            href="https://www.linkedin.com/in/levi-kane-8a94a155/"
+                            >LinkedIn</a
+                        >
+                    </li>
+                    <li>
+                        <v-icon large color="black">mdi-github</v-icon
+                        ><a href="www.github.com/levickane">Github</a>
+                    </li>
+                    <li>
+                        <v-icon large color="black">mdi-gmail</v-icon>
+                        <a href="mailto:oneleggedlevi09@gmail.com"
+                            >oneleggedlevi09@gmail.com</a
+                        >
+                    </li>
+                    <li>
+                        <v-icon large color="black">mdi-phone-outgoing</v-icon
+                        ><a href="tel:+1(773)558-3112">(773) 558-3112</a>
+                    </li>
+                </ul>
             </div>
         </v-layout>
         <v-layout row wrap>

@@ -7,7 +7,22 @@
             <div
                 class="text-subtitle-1 font-weight-black black--text text-left mt-10"
             >
-                Join or Login for a downloadable PDF version of my Resumé
+                <router-link
+                    to="/clientjoin"
+                    style="text-decoration: none; color: white; background-color: black"
+                    class="pa-2"
+                    >Join</router-link
+                >
+                or
+                <router-link
+                    to="clientlogin"
+                    style="text-decoration: none; color: white; background-color: black"
+                    class="pa-2"
+                    >Login</router-link
+                >
+                for a downloadable PDF version of my Resumé and my
+                <em>direct</em>
+                contact information
             </div>
         </v-layout>
         <hr />

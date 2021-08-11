@@ -210,7 +210,7 @@ export default {
                     title: 'Coding',
                     picture:
                         'https://images.vexels.com/media/users/3/157318/isolated/preview/2782b0b66efa5815b12c9c637322aff3-desktop-computer-icon-computer-by-vexels.png',
-                    description: 'Sit down all day long',
+                    description: 'Connect the binary dots',
                     page: '/coding'
                 }
             ]

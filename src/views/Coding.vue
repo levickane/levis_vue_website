@@ -28,7 +28,19 @@
                     />
                     <h1>{{ project.title }}</h1>
                     <h4>Technologies Used: {{ project.technologies }}</h4>
-                    <p>{{ project.description }}</p>
+                    <v-col @click="project.expand = !project.expand">
+                        <v-btn v-if="!project.expand" depressed color="white"
+                            ><em>Show Description</em></v-btn
+                        >
+                        <v-btn v-if="project.expand" depressed color="white"
+                            ><em>Hide Description</em></v-btn
+                        >
+                        <v-expand-transition>
+                            <p v-show="project.expand">
+                                {{ project.description }}
+                            </p>
+                        </v-expand-transition>
+                    </v-col>
                     <v-btn color="green" class="mr-2"
                         ><a
                             style="text-decoration: none; color:white"
@@ -53,15 +65,13 @@
 <script>
 export default {
     name: 'Coding',
-    data() {
-        return {
-            projects: {}
-        };
-    },
+    data: () => ({
+        projects: {}
+    }),
     async created() {
         const projectData = await this.$store.dispatch('getProjects');
         projectData.forEach(element => {
-            console.log(element.image);
+            console.log(element);
         });
         this.projects = projectData;
     }

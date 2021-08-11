@@ -5,6 +5,7 @@ import router from '@/router';
 import jobs from './jobs.json';
 import news from './news.json';
 import system from './system.json';
+import projects from './projects.json';
 
 Vue.use(Vuex);
 
@@ -75,6 +76,9 @@ export default new Vuex.Store({
         },
         getSystem() {
             return system;
+        },
+        getProjects() {
+            return projects;
         }
     },
     getters: {

@@ -1,9 +1,12 @@
 <template>
     <v-layout class="my-10" row wrap>
-        <v-col class="text-h3 font-weight-bold" cols="12" lg="3"
+        <v-col
+            class="text-h3 font-weight-bold d-flex justify-center"
+            cols="12"
+            lg="3"
             >Contact Me!</v-col
         >
-        <v-col>
+        <v-col cols="12" md="8" class="mx-auto">
             <v-form
                 ref="form"
                 v-model="valid"
@@ -11,88 +14,72 @@
                 lazy-validation
                 @submit="saveContactMessage"
             >
-                <v-col cols="12" md="8">
-                    <v-text-field
-                        outlined="true"
-                        v-model="name"
-                        :rules="nameRules"
-                        label="Name"
-                        required
-                    ></v-text-field>
-                </v-col>
-                <v-col cols="12" md="8">
-                    <v-text-field
-                        outlined="true"
-                        v-model="email"
-                        :rules="emailRules"
-                        label="Email"
-                        required
-                    ></v-text-field>
-                </v-col>
-                <v-col cols="12" md="8">
-                    <v-text-field
-                        outlined="true"
-                        v-model="phone"
-                        :rules="phoneRules"
-                        :counter="10"
-                        label="Phone Number"
-                        required
-                    ></v-text-field>
-                </v-col>
-                <v-col cols="12" md="8">
-                    <v-text-field
-                        outlined="true"
-                        v-model="organization"
-                        :rules="organizationRules"
-                        label="Organization"
-                        required
-                    ></v-text-field>
-                </v-col>
-                <v-col cols="12" md="8">
-                    <v-text-field
-                        outlined="true"
-                        v-model="location"
-                        :rules="locationRules"
-                        label="Location"
-                        required
-                    ></v-text-field>
-                </v-col>
-                <v-col cols="12" md="8">
-                    <v-textarea
-                        outlined="true"
-                        v-model="message"
-                        :rules="messageRules"
-                        :counter="500"
-                        label="Message"
-                        required
-                    ></v-textarea>
-                    <v-btn
-                        width="100%"
-                        dark
-                        :disabled="!valid"
-                        color="black"
-                        class="mr-4"
-                        @click="saveContactMessage"
+                <v-text-field
+                    outlined="true"
+                    v-model="name"
+                    :rules="nameRules"
+                    label="Name"
+                    required
+                ></v-text-field>
+                <v-text-field
+                    outlined="true"
+                    v-model="email"
+                    :rules="emailRules"
+                    label="Email"
+                    required
+                ></v-text-field>
+                <v-text-field
+                    outlined="true"
+                    v-model="phone"
+                    :rules="phoneRules"
+                    :counter="10"
+                    label="Phone Number"
+                    required
+                ></v-text-field>
+                <v-text-field
+                    outlined="true"
+                    v-model="organization"
+                    :rules="organizationRules"
+                    label="Organization"
+                    required
+                ></v-text-field>
+                <v-text-field
+                    outlined="true"
+                    v-model="location"
+                    :rules="locationRules"
+                    label="Location"
+                    required
+                ></v-text-field>
+                <v-textarea
+                    outlined="true"
+                    v-model="message"
+                    :rules="messageRules"
+                    :counter="500"
+                    label="Message"
+                    required
+                ></v-textarea>
+                <v-btn
+                    width="100%"
+                    dark
+                    :disabled="!valid"
+                    color="black"
+                    class="mr-4"
+                    @click="saveContactMessage"
+                >
+                    Submit
+                </v-btn>
+                <p class="mt-5 text--secondary">
+                    I need the contact information that you provide me in order
+                    to contact you about all of my cool shit that I do. You can
+                    unsubscribe from my spam at anytime. For information on how
+                    to unsubscribe, as well as our privacy practices and
+                    commitment to protecting your privacy, please visit our
+                    <router-link
+                        to="/privacy"
+                        style="text-decoration: none; color: black"
+                        >Privacy Policy</router-link
                     >
-                        Submit
-                    </v-btn>
-                </v-col>
-
-                <v-col cols="12" md="8" class="mt-5 text--secondary">
-                    <p>
-                        I need the contact information that you provide me in
-                        order to contact you about all of my cool shit that I
-                        do. You can unsubscribe from my spam at anytime. For
-                        information on how to unsubscribe, as well as our
-                        privacy practices and commitment to protecting your
-                        privacy, please visit our
-                        <router-link
-                            to="/privacy"
-                            style="text-decoration: none; color: black"
-                            >Privacy Policy</router-link
-                        >
-                    </p>
-                </v-col>
+                </p>
             </v-form>
         </v-col>
     </v-layout>

@@ -3,22 +3,13 @@
         <v-container fluid>
             <v-layout justify-left align-left column py-16 class="my-16">
                 <div class="text-h1 font-weight-black black--text text-left">
-                    About
+                    About Me
                 </div>
                 <div
                     class="text-subtitle-1 font-weight-black black--text text-left mt-10"
                 >
                     How did I get here?
                 </div>
-            </v-layout>
-            <hr />
-            <v-layout row wrap class="my-5">
-                <v-col cols="12" lg="3" xl="3" class="font-weight-black text-h4"
-                    >My Mission</v-col
-                >
-                <v-col style="font-size: 1.5em">
-                    {{ mission }}
-                </v-col>
             </v-layout>
             <hr />
             <v-layout row wrap class="my-5">
@@ -34,7 +25,16 @@
             <hr />
             <v-layout row wrap class="my-5">
                 <v-col cols="12" lg="3" xl="3" class="font-weight-black text-h4"
-                    >The Team</v-col
+                    >My Mission</v-col
+                >
+                <v-col style="font-size: 1.5em">
+                    {{ mission }}
+                </v-col>
+            </v-layout>
+            <hr />
+            <v-layout row wrap class="my-5">
+                <v-col cols="12" lg="3" xl="3" class="font-weight-black text-h4"
+                    >My Team</v-col
                 >
                 <v-col cols="12" lg="4" xl="4" style="font-size: 1em">
                     <strong class="font-weight-black text-h4">"</strong>

@@ -57,40 +57,34 @@ export default {
     data: () => ({
         faqs: [
             {
-                title: 'Title #1',
+                title: 'Will I get thin if I pay you?',
                 expand: false,
-                text:
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar risus quis mauris interdum, in euismod nibh pretium. Etiam pulvinar tincidunt dapibus. Quisque sollicitudin, mauris a consequat consectetur, turpis nisl sollicitudin enim, id consectetur neque neque nec metus. Pellentesque dolor nisi, vulputate quis lobortis ac, tincidunt et quam. Mauris pulvinar blandit nisi nec mattis. Aliquam accumsan ut sem eget efficitur. Vivamus in tortor gravida eros laoreet condimentum nec vel dui. Nullam quam massa, ultrices eget tincidunt a, pulvinar ac libero.'
+                text: 'No. You actually have to do the work'
             },
             {
-                title: 'Title #2',
+                title: 'Do you specialize in Functional Training?',
                 expand: false,
                 text:
-                    'Nullam nec massa eu est fringilla lobortis. Praesent in enim in justo blandit varius. Cras placerat arcu in sapien rhoncus aliquet. Sed interdum tortor et tincidunt condimentum. Etiam consequat mi leo, in suscipit odio scelerisque molestie. Nam et purus consequat, iaculis augue vel, sagittis ligula. Vestibulum aliquet vulputate erat. Phasellus id mauris mauris. Nunc a maximus dolor. Curabitur ut vestibulum arcu. Curabitur non lacus justo. Cras varius a magna in semper. Nulla eros ante, consectetur faucibus sapien eu, rhoncus imperdiet dui. Sed viverra iaculis nunc, id pulvinar massa egestas vitae.'
+                    'Behind every movement is a function which produces the movement. Which essentially means that every type of training is functional training. So the answer is yes.'
             },
             {
-                title: 'Title #3',
+                title: 'Do you help with dieting?',
                 expand: false,
                 text:
-                    'Aenean erat metus, imperdiet eget nisl laoreet, venenatis ultricies ante. In interdum ante vel dictum ullamcorper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer sit amet gravida diam. Aliquam in tempor metus. Fusce pellentesque pharetra sem, et luctus justo tempor dictum.'
+                    'I do not hold any sort of specialized nutrition certifications, however I do help you navigate the mess of excessive information that the media throws at you.'
             },
             {
-                title: 'Title #4',
+                title: 'Do I still need a gym membership?',
                 expand: false,
                 text:
-                    'Ut feugiat est sed tristique egestas. Nullam posuere a nunc in blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse laoreet ultrices eros, nec malesuada enim semper sit amet. '
+                    'Training with me once a week wont do much. You need to either put in the work at home or at a gym. I can provide you with exercises for both.'
             },
             {
-                title: 'Title #5',
+                title:
+                    'Will I reach my goals if I do exactly what you tell me to do?',
                 expand: false,
                 text:
-                    'Maecenas efficitur consectetur accumsan. Etiam in aliquam turpis, ut pharetra nulla. Vestibulum malesuada, nulla id elementum cursus, nibh dui rhoncus felis, suscipit mattis felis enim sed ex. Pellentesque scelerisque aliquam lorem, vel mattis nibh tincidunt ac. Suspendisse ac nibh sit amet lacus ullamcorper maximus.'
-            },
-            {
-                title: 'Title #6',
-                expand: false,
-                text:
-                    'Aliquam accumsan ut sem eget efficitur. Vivamus in tortor gravida eros laoreet condimentum nec vel dui. Nullam quam massa, ultrices eget tincidunt a, pulvinar ac libero.'
+                    "YES! I dont spend time writing you a plan just for fun. I do it because it will help you reach your goals. Follow it and you'll be successful. Deviate and results may vary"
             }
         ]
     })

@@ -46,8 +46,9 @@
                 </v-col>
                 <v-col>
                     <v-btn
-                        class="font-weight-black"
-                        outlined
+                        class="font-weight-black ml-n5"
+                        color="white"
+                        depressed
                         to="/testimonials"
                     >
                         Testimonials</v-btn

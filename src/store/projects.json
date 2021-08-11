@@ -1,6 +1,5 @@
 [
     {
-        "id": "thirteen",
         "expand": false,
         "title": "PechaKucha",
         "technologies": "JavaScript, Axios, Chartjs, React, React-Bootstrap",
@@ -9,7 +8,6 @@
         "link": "https://www.pechakucha.com/"
     },
     {
-        "id": "one",
         "expand": false,
         "title": "New Game Plus",
         "technologies": "Vue/Vuex/Vuetify, Firebase, Postmark",
@@ -18,17 +16,15 @@
         "link": "https://www.newgameplus.live/"
     },
     {
-        "id": "twelve",
         "expand": false,
         "title": "React Website",
-        "technologies": "React, Bootstrap",
+        "technologies": "JavaScript, React, Bootstrap, CSS",
         "description": "This was a dynamic website made with the React framework. I built this while finishing up my Full Stack bootcamp with Northwestern University",
         "image": "portfolioScreenShot",
         "link": "https://www.oneleggedlevi.com",
         "githubLink": "https://github.com/levickane/reactportfolio"
     },
     {
-        "id": "four",
         "expand": false,
         "title": "Chicago Boating App",
         "technologies": "Node, Express, MongoDB, Bootstrap, Axios, React-Bootstrap, JavaScript",
@@ -38,7 +34,6 @@
         "githubLink": "https://github.com/markdrecoll/chicagoboatingapp"
     },
     {
-        "id": "three",
         "expand": false,
         "title": "Expense Tracker 7000",
         "technologies": "Node, Express, Handlebars, MySql/Sequelize, JawsDB, Chartjs, Bootstrap, JQuery, JavaScript",
@@ -48,7 +43,6 @@
         "githubLink": "https://github.com/levickane/expensetracker7000"
     },
     {
-        "id": "ten",
         "expand": false,
         "title": "Google Book Search",
         "technologies": "MonogDB/Mongoose, Express, React, Node, Bootstrap, Axios, JavaScript",
@@ -58,7 +52,6 @@
         "githubLink": "https://github.com/levickane/googlebooksearch"
     },
     {
-        "id": "nine",
         "expand": false,
         "title": "Tech Blog",
         "technologies": "Node, Express, Handlebars, MySql/Sequelize, JawsDB, Bootstrap, JQuery, JavaScript",
@@ -68,7 +61,6 @@
         "githubLink": "https://github.com/levickane/mvctechblog"
     },
     {
-        "id": "eleven",
         "expand": false,
         "title": "Budget Tracker",
         "technologies": "MongoDB/Mongoose, Express, Node, IndexedDB, ServiceWorker, WebManifest, Bootstrap, ChartJs, JavaScript",
@@ -78,7 +70,6 @@
         "githubLink": "https://github.com/levickane/budgetingpwa"
     },
     {
-        "id": "two",
         "expand": false,
         "title": "Expense Tracker 5000",
         "technologies": "Fetch API, JS, JQuery, Materialize, LocalStorage",
@@ -88,7 +79,6 @@
         "githubLink": "https://github.com/levickane/expensetracker"
     },
     {
-        "id": "five",
         "expand": false,
         "title": "Fitness Tracker",
         "technologies": "JavaScript, JQuery, MongoDB/Mongoose, Express, Chartjs, Bootstrap",
@@ -98,7 +88,6 @@
         "githubLink": "https://github.com/levickane/fitnesstracker"
     },
     {
-        "id": "six",
         "expand": false,
         "title": "Weather App",
         "technologies": "Fetch API, Bootstrap, JQuery, localStorage",
@@ -108,7 +97,6 @@
         "githubLink": "https://github.com/levickane/weatherApp"
     },
     {
-        "id": "seven",
         "expand": false,
         "title": "Team Profile Generator",
         "technologies": "Node, Inquire, Jest, JavaScript, Bootstrap",
@@ -118,7 +106,6 @@
         "githubLink": "https://github.com/levickane/teamprofilegenerator"
     },
     {
-        "id": "eight",
         "expand": false,
         "title": "Hot Restaurant",
         "technologies": "Express, RESTful APIs, Bootstrap, JQuery, JavaScript",

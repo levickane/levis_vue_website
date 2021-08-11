@@ -1,33 +1,52 @@
 <template>
-    <v-container grid-list-lg>
+    <v-container fluid>
         <v-layout row wrap>
-            <v-col class="font-weight-black text-h4">News!!</v-col>
+            <v-col class="font-weight-black text-h4">Projects</v-col>
         </v-layout>
         <v-layout row wrap>
             <v-col
                 cols="12"
                 lg="4"
                 md="4"
-                v-for="(news, index) in newsLinks.slice(0, 3)"
+                v-for="(project, index) in projects.slice(0, 3)"
                 :key="index"
             >
-                <v-card>
+                <v-card class="pa-2">
                     <v-img
-                        :src="`${news.picture}`"
-                        height="200"
-                        contain
-                    ></v-img>
-                    <v-card-subtitle class="pb-0">News </v-card-subtitle>
-                    <v-card-title class="pt-0">{{ news.title }}</v-card-title>
-                    <v-card-actions class="ml-2"
+                        :src="require(`../assets/${project.image}.png`)"
+                        height="400"
+                        style="border: solid; border-width:1px; border-radius: 2%"
+                    />
+                    <h1>{{ project.title }}</h1>
+                    <h4>Technologies Used: {{ project.technologies }}</h4>
+                    <v-col @click="project.expand = !project.expand">
+                        <v-btn v-if="!project.expand" depressed color="white"
+                            ><em>Show Description</em></v-btn
+                        >
+                        <v-btn v-if="project.expand" depressed color="white"
+                            ><em>Hide Description</em></v-btn
+                        >
+                        <v-expand-transition>
+                            <p v-show="project.expand">
+                                {{ project.description }}
+                            </p>
+                        </v-expand-transition>
+                    </v-col>
+                    <v-btn color="green" class="mr-2"
                         ><a
-                            :href="`${news.link}`"
+                            style="text-decoration: none; color:white"
+                            :href="`${project.link}`"
                             target="_blank"
-                            style="text-decoration: none; color: black"
-                        >
-                            Learn More <v-icon>mdi-arrow-right</v-icon></a
-                        >
-                    </v-card-actions>
+                            >Live Link</a
+                        ></v-btn
+                    >
+                    <v-btn v-if="project.githubLink"
+                        ><a
+                            style="text-decoration: none; color:black"
+                            :href="`${project.githubLink}`"
+                            >Github</a
+                        ></v-btn
+                    >
                 </v-card>
             </v-col>
         </v-layout>
@@ -37,15 +56,13 @@
 <script>
 export default {
     name: 'NewsCarousel',
-    data() {
-        return {
-            newsLinks: {}
-        };
-    },
+    data: () => ({
+        projects: {}
+    }),
 
     async created() {
-        const newsData = await this.$store.dispatch('getNews');
-        this.newsLinks = newsData.news.newsLinks;
+        const projectData = await this.$store.dispatch('getProjects');
+        this.projects = projectData;
     }
 };
 </script>

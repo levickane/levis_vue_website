@@ -1,6 +1,6 @@
 <template>
     <v-container fluid>
-        <v-layout justify-left align-left column py-16 class="my-16">
+        <v-layout justify-left align-left column py-16 class="my-16 px-3">
             <div class="text-h1 font-weight-black black--text my-16 text-left">
                 Careers
             </div>
@@ -11,7 +11,7 @@
             </div>
         </v-layout>
         <hr />
-        <v-layout row wrap class="my-5">
+        <v-layout row wrap class="my-5 px-5">
             <v-col cols="12" lg="3" xl="3" class="font-weight-black text-h4"
                 >My Mission</v-col
             >

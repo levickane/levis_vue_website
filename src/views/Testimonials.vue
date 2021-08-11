@@ -1,6 +1,6 @@
 <template>
     <v-container fluid>
-        <v-layout justify-left align-left column py-16 class="my-16">
+        <v-layout justify-left align-left column py-16 class="my-16 px-3">
             <div class="text-h2 font-weight-black black--text text-left">
                 Testimonials
             </div>
@@ -11,7 +11,7 @@
             </div>
         </v-layout>
         <hr class="mb-10" />
-        <v-layout row wrap>
+        <v-layout row wrap class="px-3">
             <v-col cols="12" v-for="(item, index) in techReviews" :key="index">
                 <v-card class="pa-3">
                     <v-layout row wrap>
@@ -29,7 +29,7 @@
                 </v-card>
             </v-col>
         </v-layout>
-        <v-layout row wrap>
+        <v-layout row wrap class="px-3">
             <v-col cols="6" md="4">
                 <h2>Fitness reviews:</h2>
                 <h4>

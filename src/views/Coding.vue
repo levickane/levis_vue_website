@@ -14,9 +14,8 @@
         <v-layout row wrap class="d-flex justify-center">
             <v-col
                 cols="12"
-                lg="5"
-                md="5"
-                class="mx-1"
+                lg="6"
+                md="6"
                 v-for="(project, index) in projects"
                 :key="index"
             >
@@ -70,9 +69,6 @@ export default {
     }),
     async created() {
         const projectData = await this.$store.dispatch('getProjects');
-        projectData.forEach(element => {
-            console.log(element);
-        });
         this.projects = projectData;
     }
 };

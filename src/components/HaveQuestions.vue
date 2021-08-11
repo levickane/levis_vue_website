@@ -11,7 +11,7 @@
                     to="/contact"
                     color="green"
                 >
-                    Hit me up!
+                    Cick here!
                 </v-btn>
             </v-col>
             <v-col cols="12" md="5" lg="5">

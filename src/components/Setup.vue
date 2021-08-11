@@ -20,7 +20,7 @@
                             to="/contact"
                             color="green"
                         >
-                            Hit me up!
+                            Slide into my DM's
                         </v-btn>
                     </v-col>
                     <v-col cols="12" md="5" lg="5">

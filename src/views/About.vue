@@ -1,7 +1,7 @@
 <template>
     <div>
         <v-container fluid>
-            <v-layout justify-left align-left column py-16 class="my-16">
+            <v-layout justify-left align-left column py-16 class="my-16 px-3">
                 <div class="text-h1 font-weight-black black--text text-left">
                     About Me
                 </div>
@@ -12,7 +12,7 @@
                 </div>
             </v-layout>
             <hr />
-            <v-layout row wrap class="my-5">
+            <v-layout row wrap class="my-5 px-5">
                 <v-col cols="12" lg="3" xl="3" class="font-weight-black text-h4"
                     >My Bio</v-col
                 >
@@ -23,7 +23,7 @@
                 </v-col>
             </v-layout>
             <hr />
-            <v-layout row wrap class="my-5">
+            <v-layout row wrap class="my-5 px-5">
                 <v-col cols="12" lg="3" xl="3" class="font-weight-black text-h4"
                     >My Mission</v-col
                 >
@@ -32,7 +32,7 @@
                 </v-col>
             </v-layout>
             <hr />
-            <v-layout row wrap class="my-5">
+            <v-layout row wrap class="my-5 px-5">
                 <v-col cols="12" lg="3" xl="3" class="font-weight-black text-h4"
                     >My Team</v-col
                 >
@@ -80,7 +80,7 @@
                 </v-col>
             </v-layout>
             <hr />
-            <news-carousel></news-carousel>
+            <news-carousel class="px-5"></news-carousel>
             <careers></careers>
         </v-container>
     </div>

@@ -1,7 +1,7 @@
 <template>
     <v-container fluid>
         <v-layout row wrap>
-            <v-col class="font-weight-black text-h4">Projects</v-col>
+            <v-col class="font-weight-black text-h4">My Latest Projects</v-col>
         </v-layout>
         <v-layout row wrap>
             <v-col

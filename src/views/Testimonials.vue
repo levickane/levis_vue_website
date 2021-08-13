@@ -61,7 +61,7 @@ export default {
                 person: 'Brian Rojas',
                 profilePic:
                     'https://media-exp1.licdn.com/dms/image/C4E03AQGER2y6mcgGpA/profile-displayphoto-shrink_100_100/0/1517753039495?e=1634169600&v=beta&t=ucdhGNyBDgZvJdIbxSBtzS7PwkAmorFVnhmPoAKv6ug',
-                jobTitle: 'Mobile Developer - FourSquare',
+                jobTitle: 'Senior Developer - FourSquare',
                 testimony:
                     "As a former client of Levi's and a current software developer mentor of his, I can attest to his ability to quickly learn and adapt. I've watch his skills grow since he started learning how to code and I'm proud of how far he has come! The fact that he has already learned as much as he has during the short time that he has is incredibly impressive. His work ethic is unrivaled and I believe that any company would be lucky to have him!"
             },

@@ -55,7 +55,6 @@
                                 v-model="interestRate"
                                 :rules="[rules.number]"
                                 label="Interest Rate"
-                                type="number"
                             ></v-text-field>
 
                             <v-text-field

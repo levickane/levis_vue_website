@@ -13,7 +13,7 @@
         <hr class="mb-14" />
         <v-layout row wrap class="d-flex justify-center">
             <v-col cols="12" sm="8">
-                <form @submit.prevent="submit" ref="observer">
+                <form @submit.prevent="submit">
                     <v-layout row wrap class="d-flex justify-center">
                         <v-col cols="6">
                             <v-text-field
@@ -28,6 +28,7 @@
                                 :rules="[rules.number]"
                                 label="Purchase Price"
                                 append-icon="mdi-currency-usd"
+                                required
                             ></v-text-field>
 
                             <v-text-field
@@ -35,13 +36,16 @@
                                 :rules="[rules.number]"
                                 label="Annual Tax Amount"
                                 append-icon="mdi-currency-usd"
+                                required
                             ></v-text-field>
 
                             <v-select
                                 v-model="percentDown"
-                                :items="percentDown"
+                                :items="dpOptions"
                                 label="Down Payment Amount"
                                 data-vv-name="PercentDown"
+                                type="text"
+                                required
                             ></v-select>
 
                             <v-text-field
@@ -55,6 +59,7 @@
                                 :rules="[rules.number]"
                                 label="Monthly Insurance Amount"
                                 append-icon="mdi-currency-usd"
+                                required
                             ></v-text-field>
 
                             <v-text-field
@@ -62,6 +67,7 @@
                                 :rules="[rules.number]"
                                 label="Est. Monthly Utilities"
                                 append-icon="mdi-currency-usd"
+                                required
                             ></v-text-field>
                         </v-col>
                         <v-col>
@@ -70,7 +76,6 @@
                                 :rules="[rules.number]"
                                 label="Unit 1 Rent"
                                 append-icon="mdi-currency-usd"
-                                clearable
                             ></v-text-field>
 
                             <v-text-field
@@ -78,7 +83,6 @@
                                 :rules="[rules.number]"
                                 label="Unit 2 Rent"
                                 append-icon="mdi-currency-usd"
-                                clearable
                             ></v-text-field>
 
                             <v-text-field
@@ -86,35 +90,30 @@
                                 :rules="[rules.number]"
                                 label="Unit 3 Rent"
                                 append-icon="mdi-currency-usd"
-                                clearable
                             ></v-text-field>
                             <v-text-field
                                 v-model="unit4"
                                 :rules="[rules.number]"
                                 label="Unit 4 Rent"
                                 append-icon="mdi-currency-usd"
-                                clearable
                             ></v-text-field>
                             <v-text-field
                                 v-model="unit5"
                                 :rules="[rules.number]"
                                 label="Unit 5 Rent"
                                 append-icon="mdi-currency-usd"
-                                clearable
                             ></v-text-field>
                             <v-text-field
                                 v-model="bonusUnit"
                                 :rules="[rules.number]"
                                 label="Bonus Unit Rent"
                                 append-icon="mdi-currency-usd"
-                                clearable
                             ></v-text-field>
                             <v-text-field
                                 v-model="parkingRent"
                                 :rules="[rules.number]"
                                 label="Parking Rent"
                                 append-icon="mdi-currency-usd"
-                                clearable
                             ></v-text-field>
                         </v-col>
                         <v-col cols="12" class="d-flex justify-end mb-2">
@@ -127,15 +126,15 @@
                         </v-col>
                     </v-layout>
                 </form>
+                <h4>Down Payment: ${{ downPayment.toFixed(2) }}</h4>
                 <h4>
                     Money left in your bank after purchase: ${{
                         leftOverMoney.toFixed(2)
                     }}
                 </h4>
                 <h4>
-                    Estimated monthly payment (with Utilities): ${{
-                        MonthlyPayment.toFixed(2)
-                    }}
+                    Estimated monthly payment (with Utilities{{ PMIincluded }}):
+                    ${{ MonthlyPayment.toFixed(2) }}
                 </h4>
                 <h2>Potential Income: ${{ Income.toFixed(2) }}</h2>
             </v-col>
@@ -150,17 +149,18 @@ export default {
     data: () => ({
         rules: {
             number: value => {
-                const numPattern = /^[0-9]*$/;
+                const numPattern = /^[+-]?([0-9]+\.?[0-9]*|\.[0-9]+)$/;
                 return numPattern.test(value) || 'Please enter numbers only';
             }
         },
         potentialMoney: '',
         purchasePrice: '',
         annualTax: '',
-        percentDown: ['3.5%', '5%', '10%', '15%', '20%', '25%', '100%'],
-        interestRate: '',
-        insurance: '',
-        utilities: '',
+        dpOptions: ['3.5%', '5%', '10%', '15%', '20%', '25%', '100%'],
+        percentDown: null,
+        interestRate: 0,
+        insurance: 150,
+        utilities: 400,
         unit1: 0,
         unit2: 0,
         unit3: 0,
@@ -168,40 +168,46 @@ export default {
         unit5: 0,
         bonusUnit: 0,
         parkingRent: 0,
+        downPayment: 0,
         leftOverMoney: 0,
         MonthlyPayment: 0,
-        Income: 0
+        Income: 0,
+        PMIincluded: ''
     }),
 
     methods: {
-        switchPercentToDecimal(amount) {
-            switch (amount) {
-                case '3.5%':
-                    return 0.035;
-                case '5%':
-                    return 0.05;
-                case '10%':
-                    return 0.1;
-                case '15%':
-                    return 0.15;
-                case '20%':
-                    return 0.2;
-                case '25%':
-                    return 0.25;
-                case '100%':
-                    return 1;
-            }
-        },
         submit() {
-            const moneyDown =
-                this.switchPercentToDecimal(this.percentDown) *
-                this.purchasePrice;
-            const loanAmount = this.purchasePrice - moneyDown;
-            const monthlyPmt = mortgageHelpers.getMonthlyPayments(
-                loanAmount,
-                parseInt(this.interestRate),
-                360
-            );
+            const switchPercentToDecimal = amount => {
+                switch (amount) {
+                    case '3.5%':
+                        return 0.035;
+                    case '5%':
+                        return 0.05;
+                    case '10%':
+                        return 0.1;
+                    case '15%':
+                        return 0.15;
+                    case '20%':
+                        return 0.2;
+                    case '25%':
+                        return 0.25;
+                    case '100%':
+                        return 1;
+                }
+            };
+            const dpDecimal = switchPercentToDecimal(this.percentDown);
+            this.downPayment =
+                dpDecimal <= 0.25 ? this.purchasePrice * dpDecimal : 0;
+            const loanAmount = this.purchasePrice - this.downPayment;
+            const monthlyPmt =
+                dpDecimal <= 0.25
+                    ? mortgageHelpers.getMonthlyPayments(
+                          loanAmount,
+                          parseFloat(this.interestRate),
+                          360
+                      )
+                    : 0;
+
             const unit1 = parseInt(this.unit1);
             const unit2 = parseInt(this.unit2);
             const unit3 = parseInt(this.unit3);
@@ -209,17 +215,32 @@ export default {
             const unit5 = parseInt(this.unit5);
             const bonusUnit = parseInt(this.bonusUnit);
             const parkingRent = parseInt(this.parkingRent);
-            const monthlyPropTax = parseInt(this.annualTax) / 12;
+            const monthlyPropTax = parseFloat(this.annualTax) / 12;
             const totalIncome =
                 unit1 + unit2 + unit3 + unit4 + unit5 + bonusUnit + parkingRent;
 
-            console.log(totalIncome);
-            this.leftOverMoney = this.potentialMoney - moneyDown;
-            this.MonthlyPayment =
+            this.leftOverMoney = this.potentialMoney - this.downPayment;
+
+            const monthlyPay =
                 monthlyPmt +
                 monthlyPropTax +
                 parseInt(this.utilities) +
                 parseInt(this.insurance);
+            const paidInFullPmt =
+                monthlyPropTax +
+                parseInt(this.utilities) +
+                parseInt(this.insurance);
+            if (dpDecimal < 0.2) {
+                this.MonthlyPayment = monthlyPay + 250;
+                this.PMIincluded = ' & PMI';
+            } else if (dpDecimal > 0.25) {
+                this.MonthlyPayment = paidInFullPmt;
+                this.PMIincluded = '';
+            } else {
+                this.MonthlyPayment = monthlyPay;
+                this.PMIincluded = '';
+            }
+
             this.Income = totalIncome - this.MonthlyPayment;
         },
         clear() {

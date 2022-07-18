@@ -139,7 +139,13 @@
                         </v-col>
                     </v-layout>
                 </form>
-                <h4>Down Payment: ${{ downPayment.toFixed(2) }}</h4>
+                <h4>
+                    Down Payment: ${{
+                        percentDown !== '100%'
+                            ? downPayment.toFixed(2)
+                            : downPayment
+                    }}
+                </h4>
                 <h4>
                     Money left in your bank after purchase: ${{
                         leftOverMoney.toFixed(2)
@@ -210,7 +216,9 @@ export default {
             };
             const dpDecimal = switchPercentToDecimal(this.percentDown);
             this.downPayment =
-                dpDecimal <= 0.25 ? this.purchasePrice * dpDecimal : 0;
+                dpDecimal <= 0.25
+                    ? this.purchasePrice * dpDecimal
+                    : this.purchasePrice;
             const loanAmount = this.purchasePrice - this.downPayment;
             const monthlyPmt =
                 dpDecimal <= 0.25

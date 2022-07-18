@@ -21,6 +21,7 @@
                                 :rules="[rules.number]"
                                 label="Money On Hand"
                                 append-icon="mdi-currency-usd"
+                                type="number"
                             ></v-text-field>
 
                             <v-text-field
@@ -29,6 +30,7 @@
                                 label="Purchase Price"
                                 append-icon="mdi-currency-usd"
                                 required
+                                type="number"
                             ></v-text-field>
 
                             <v-text-field
@@ -37,6 +39,7 @@
                                 label="Annual Tax Amount"
                                 append-icon="mdi-currency-usd"
                                 required
+                                type="number"
                             ></v-text-field>
 
                             <v-select
@@ -52,6 +55,7 @@
                                 v-model="interestRate"
                                 :rules="[rules.number]"
                                 label="Interest Rate"
+                                type="number"
                             ></v-text-field>
 
                             <v-text-field
@@ -60,6 +64,7 @@
                                 label="Monthly Insurance Amount"
                                 append-icon="mdi-currency-usd"
                                 required
+                                type="number"
                             ></v-text-field>
 
                             <v-text-field
@@ -68,6 +73,7 @@
                                 label="Est. Monthly Utilities"
                                 append-icon="mdi-currency-usd"
                                 required
+                                type="number"
                             ></v-text-field>
                         </v-col>
                         <v-col>
@@ -76,6 +82,7 @@
                                 :rules="[rules.number]"
                                 label="Unit 1 Rent"
                                 append-icon="mdi-currency-usd"
+                                type="number"
                             ></v-text-field>
 
                             <v-text-field
@@ -83,6 +90,7 @@
                                 :rules="[rules.number]"
                                 label="Unit 2 Rent"
                                 append-icon="mdi-currency-usd"
+                                type="number"
                             ></v-text-field>
 
                             <v-text-field
@@ -90,30 +98,35 @@
                                 :rules="[rules.number]"
                                 label="Unit 3 Rent"
                                 append-icon="mdi-currency-usd"
+                                type="number"
                             ></v-text-field>
                             <v-text-field
                                 v-model="unit4"
                                 :rules="[rules.number]"
                                 label="Unit 4 Rent"
                                 append-icon="mdi-currency-usd"
+                                type="number"
                             ></v-text-field>
                             <v-text-field
                                 v-model="unit5"
                                 :rules="[rules.number]"
                                 label="Unit 5 Rent"
                                 append-icon="mdi-currency-usd"
+                                type="number"
                             ></v-text-field>
                             <v-text-field
                                 v-model="bonusUnit"
                                 :rules="[rules.number]"
                                 label="Bonus Unit Rent"
                                 append-icon="mdi-currency-usd"
+                                type="number"
                             ></v-text-field>
                             <v-text-field
                                 v-model="parkingRent"
                                 :rules="[rules.number]"
                                 label="Parking Rent"
                                 append-icon="mdi-currency-usd"
+                                type="number"
                             ></v-text-field>
                         </v-col>
                         <v-col cols="12" class="d-flex justify-end mb-2">

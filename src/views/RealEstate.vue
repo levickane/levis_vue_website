@@ -75,7 +75,7 @@
                                 type="number"
                             ></v-text-field>
                         </v-col>
-                        <v-col>
+                        <v-col cols="6">
                             <v-text-field
                                 v-model="unit1"
                                 :rules="[rules.number]"
@@ -128,7 +128,20 @@
                                 type="number"
                             ></v-text-field>
                         </v-col>
-                        <v-col cols="12" class="d-flex justify-end mb-2">
+                        <v-col cols="6" sm="4">
+                            <v-text-field
+                                label="MLS #"
+                                outlined
+                                v-model="googleQuery"
+                            >
+                            </v-text-field>
+                        </v-col>
+                        <v-col cols="6" sm="2">
+                            <v-btn @click="googleStuff">
+                                Search
+                            </v-btn>
+                        </v-col>
+                        <v-col cols="6" class="d-flex justify-end mb-2">
                             <v-btn class="mr-4" type="submit">
                                 submit
                             </v-btn>
@@ -162,6 +175,7 @@
 
 <script>
 import mortgageHelpers from 'mortgage-helpers';
+// const googleIt = require('google-it');
 export default {
     name: 'RealEstate',
     data: () => ({
@@ -190,7 +204,8 @@ export default {
         leftOverMoney: 0,
         MonthlyPayment: 0,
         Income: 0,
-        PMIincluded: ''
+        PMIincluded: '',
+        googleQuery: ''
     }),
 
     methods: {
@@ -279,6 +294,11 @@ export default {
             this.bonusUnit = 0;
             this.parkingRent = 0;
             this.$refs.observer.reset();
+        },
+        async googleStuf() {
+            console.log('hello');
+            // const results = await googleIt({ query: this.googleQuery });
+            // console.log('results', results);
         }
     }
 };

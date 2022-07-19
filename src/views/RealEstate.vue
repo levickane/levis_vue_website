@@ -1,5 +1,5 @@
 <template>
-    <v-container fluid>
+    <v-container fluid class="hero">
         <v-layout justify-left align-left column py-16 class="my-16">
             <div class="text-h1 font-weight-black black--text text-left">
                 Real Estate!
@@ -13,161 +13,164 @@
         <hr class="mb-14" />
         <v-layout row wrap class="d-flex justify-center">
             <v-col cols="12" sm="8">
-                <form @submit.prevent="submit">
-                    <v-layout row wrap class="d-flex justify-center">
-                        <v-col cols="6">
-                            <v-text-field
-                                v-model="potentialMoney"
-                                :rules="[rules.number]"
-                                label="Money On Hand"
-                                append-icon="mdi-currency-usd"
-                                type="number"
-                            ></v-text-field>
+                <v-card class="pa-5 rounded-lg" color="rgb(255, 255, 255, 0.8)">
+                    <v-card-title class="text-center"
+                        >Calculate your monthly ROI</v-card-title
+                    >
+                    <v-card-text class="text-center"
+                        >***For best results, be conservative in your
+                        projections***</v-card-text
+                    >
+                    <form @submit.prevent="submit">
+                        <v-layout row wrap class="d-flex justify-center">
+                            <v-col cols="6">
+                                <v-text-field
+                                    v-model="potentialMoney"
+                                    :rules="[rules.number]"
+                                    label="Money On Hand"
+                                    append-icon="mdi-currency-usd"
+                                    type="number"
+                                ></v-text-field>
 
-                            <v-text-field
-                                v-model="purchasePrice"
-                                :rules="[rules.number]"
-                                label="Purchase Price"
-                                append-icon="mdi-currency-usd"
-                                required
-                                type="number"
-                            ></v-text-field>
+                                <v-text-field
+                                    v-model="purchasePrice"
+                                    :rules="[rules.number]"
+                                    label="Purchase Price"
+                                    append-icon="mdi-currency-usd"
+                                    required
+                                    type="number"
+                                ></v-text-field>
 
-                            <v-text-field
-                                v-model="annualTax"
-                                :rules="[rules.number]"
-                                label="Annual Tax Amount"
-                                append-icon="mdi-currency-usd"
-                                required
-                                type="number"
-                            ></v-text-field>
+                                <v-text-field
+                                    v-model="annualTax"
+                                    :rules="[rules.number]"
+                                    label="Annual Tax Amount"
+                                    append-icon="mdi-currency-usd"
+                                    required
+                                    type="number"
+                                ></v-text-field>
 
-                            <v-select
-                                v-model="percentDown"
-                                :items="dpOptions"
-                                label="Down Payment Amount"
-                                data-vv-name="PercentDown"
-                                type="text"
-                                required
-                            ></v-select>
+                                <v-select
+                                    v-model="percentDown"
+                                    :items="dpOptions"
+                                    label="Down Payment Amount"
+                                    data-vv-name="PercentDown"
+                                    type="text"
+                                    required
+                                ></v-select>
 
-                            <v-text-field
-                                v-model="interestRate"
-                                :rules="[rules.number]"
-                                label="Interest Rate"
-                            ></v-text-field>
+                                <v-text-field
+                                    v-model="interestRate"
+                                    :rules="[rules.number]"
+                                    label="Interest Rate"
+                                ></v-text-field>
 
-                            <v-text-field
-                                v-model="insurance"
-                                :rules="[rules.number]"
-                                label="Monthly Insurance Amount"
-                                append-icon="mdi-currency-usd"
-                                required
-                                type="number"
-                            ></v-text-field>
+                                <v-text-field
+                                    v-model="insurance"
+                                    :rules="[rules.number]"
+                                    label="Monthly Insurance Amount"
+                                    append-icon="mdi-currency-usd"
+                                    required
+                                    type="number"
+                                ></v-text-field>
 
-                            <v-text-field
-                                v-model="utilities"
-                                :rules="[rules.number]"
-                                label="Est. Monthly Utilities"
-                                append-icon="mdi-currency-usd"
-                                required
-                                type="number"
-                            ></v-text-field>
-                        </v-col>
-                        <v-col cols="6">
-                            <v-text-field
-                                v-model="unit1"
-                                :rules="[rules.number]"
-                                label="Unit 1 Rent"
-                                append-icon="mdi-currency-usd"
-                                type="number"
-                            ></v-text-field>
+                                <v-text-field
+                                    v-model="utilities"
+                                    :rules="[rules.number]"
+                                    label="Est. Monthly Utilities"
+                                    append-icon="mdi-currency-usd"
+                                    required
+                                    type="number"
+                                ></v-text-field>
+                            </v-col>
+                            <v-col cols="6">
+                                <v-text-field
+                                    v-model="unit1"
+                                    :rules="[rules.number]"
+                                    label="Unit 1 Rent"
+                                    append-icon="mdi-currency-usd"
+                                    type="number"
+                                ></v-text-field>
 
-                            <v-text-field
-                                v-model="unit2"
-                                :rules="[rules.number]"
-                                label="Unit 2 Rent"
-                                append-icon="mdi-currency-usd"
-                                type="number"
-                            ></v-text-field>
+                                <v-text-field
+                                    v-model="unit2"
+                                    :rules="[rules.number]"
+                                    label="Unit 2 Rent"
+                                    append-icon="mdi-currency-usd"
+                                    type="number"
+                                ></v-text-field>
 
-                            <v-text-field
-                                v-model="unit3"
-                                :rules="[rules.number]"
-                                label="Unit 3 Rent"
-                                append-icon="mdi-currency-usd"
-                                type="number"
-                            ></v-text-field>
-                            <v-text-field
-                                v-model="unit4"
-                                :rules="[rules.number]"
-                                label="Unit 4 Rent"
-                                append-icon="mdi-currency-usd"
-                                type="number"
-                            ></v-text-field>
-                            <v-text-field
-                                v-model="unit5"
-                                :rules="[rules.number]"
-                                label="Unit 5 Rent"
-                                append-icon="mdi-currency-usd"
-                                type="number"
-                            ></v-text-field>
-                            <v-text-field
-                                v-model="bonusUnit"
-                                :rules="[rules.number]"
-                                label="Bonus Unit Rent"
-                                append-icon="mdi-currency-usd"
-                                type="number"
-                            ></v-text-field>
-                            <v-text-field
-                                v-model="parkingRent"
-                                :rules="[rules.number]"
-                                label="Parking Rent"
-                                append-icon="mdi-currency-usd"
-                                type="number"
-                            ></v-text-field>
-                        </v-col>
-                        <v-col cols="6" sm="4">
-                            <v-text-field
-                                label="MLS #"
-                                outlined
-                                v-model="googleQuery"
-                            >
-                            </v-text-field>
-                        </v-col>
-                        <v-col cols="6" sm="2">
-                            <v-btn @click="googleStuff">
-                                Search
-                            </v-btn>
-                        </v-col>
-                        <v-col cols="6" class="d-flex justify-end mb-2">
-                            <v-btn class="mr-4" type="submit">
-                                submit
-                            </v-btn>
-                            <v-btn @click="clear">
-                                clear
-                            </v-btn>
-                        </v-col>
-                    </v-layout>
-                </form>
-                <h4>
-                    Down Payment: ${{
-                        percentDown !== '100%'
-                            ? downPayment.toFixed(2)
-                            : downPayment
-                    }}
-                </h4>
-                <h4>
-                    Money left in your bank after purchase: ${{
-                        leftOverMoney.toFixed(2)
-                    }}
-                </h4>
-                <h4>
-                    Estimated monthly payment (with Utilities{{ PMIincluded }}):
-                    ${{ MonthlyPayment.toFixed(2) }}
-                </h4>
-                <h2>Potential Income: ${{ Income.toFixed(2) }}</h2>
+                                <v-text-field
+                                    v-model="unit3"
+                                    :rules="[rules.number]"
+                                    label="Unit 3 Rent"
+                                    append-icon="mdi-currency-usd"
+                                    type="number"
+                                ></v-text-field>
+                                <v-text-field
+                                    v-model="unit4"
+                                    :rules="[rules.number]"
+                                    label="Unit 4 Rent"
+                                    append-icon="mdi-currency-usd"
+                                    type="number"
+                                ></v-text-field>
+                                <v-text-field
+                                    v-model="unit5"
+                                    :rules="[rules.number]"
+                                    label="Unit 5 Rent"
+                                    append-icon="mdi-currency-usd"
+                                    type="number"
+                                ></v-text-field>
+                                <v-text-field
+                                    v-model="bonusUnit"
+                                    :rules="[rules.number]"
+                                    label="Bonus Unit Rent"
+                                    append-icon="mdi-currency-usd"
+                                    type="number"
+                                ></v-text-field>
+                                <v-text-field
+                                    v-model="parkingRent"
+                                    :rules="[rules.number]"
+                                    label="Parking Rent"
+                                    append-icon="mdi-currency-usd"
+                                    type="number"
+                                ></v-text-field>
+                            </v-col>
+
+                            <v-col cols="12" class="d-flex justify-end mb-2">
+                                <v-btn class="mr-4" type="submit">
+                                    submit
+                                </v-btn>
+                                <v-btn @click="clear">
+                                    clear
+                                </v-btn>
+                            </v-col>
+                        </v-layout>
+                    </form>
+                </v-card>
+                <v-card
+                    class="pa-5 mt-10 rounded-lg"
+                    color="rgb(255, 255, 255, 0.8)"
+                >
+                    <h4>
+                        Down Payment: ${{
+                            percentDown !== '100%'
+                                ? downPayment.toFixed(2)
+                                : downPayment
+                        }}
+                    </h4>
+                    <h4>
+                        Money left in your bank after purchase: ${{
+                            leftOverMoney.toFixed(2)
+                        }}
+                    </h4>
+                    <h4>
+                        Estimated monthly payment (with Utilities{{
+                            PMIincluded
+                        }}): ${{ MonthlyPayment.toFixed(2) }}
+                    </h4>
+                    <h2>Potential Income: ${{ Income.toFixed(2) }}</h2>
+                </v-card>
             </v-col>
         </v-layout>
     </v-container>
@@ -175,7 +178,6 @@
 
 <script>
 import mortgageHelpers from 'mortgage-helpers';
-// const googleIt = require('google-it');
 export default {
     name: 'RealEstate',
     data: () => ({
@@ -294,14 +296,21 @@ export default {
             this.bonusUnit = 0;
             this.parkingRent = 0;
             this.$refs.observer.reset();
-        },
-        async googleStuf() {
-            console.log('hello');
-            // const results = await googleIt({ query: this.googleQuery });
-            // console.log('results', results);
         }
     }
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.hero {
+    background-image: url('../assets/chicago-3-flats.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media only screen and (max-width: 515px) {
+    .hero {
+        background-image: url('../assets/chicago-3-flats.jpeg');
+        height: 100%;
+    }
+}
+</style>

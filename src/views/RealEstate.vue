@@ -1,11 +1,11 @@
 <template>
     <v-container fluid class="hero">
         <v-layout justify-left align-left column py-16 class="my-16">
-            <div class="text-h1 font-weight-black black--text text-left">
+            <div class="text-h1 font-weight-black white--text text-left">
                 Real Estate!
             </div>
             <div
-                class="text-subtitle-1 font-weight-black black--text text-left mt-10"
+                class="text-h6 font-weight-black grey--text darken-4 text-left mt-10"
             >
                 Easily calculate your ROI when investing in multi-units
             </div>
